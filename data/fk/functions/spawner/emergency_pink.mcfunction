@@ -18,4 +18,5 @@ schedule clear fk:spawner/spawn_cows_pink
 
 
 scoreboard players set cow spawner_pink 0
-scoreboard players set xxx spawner_pink 0
+# scoreboard players set xxx spawner_pink 0
+# ...
