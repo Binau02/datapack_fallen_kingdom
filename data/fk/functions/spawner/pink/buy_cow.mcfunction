@@ -10,6 +10,7 @@ execute if score buy spawner_pink matches 1 run scoreboard players remove money_
 execute if score buy spawner_pink matches 1 run scoreboard players add cow spawner_pink 1
 # execute if score buy spawner_pink matches 1 run setblock <panneau lvl 1>
 # execute if score buy spawner_pink matches 1 run setblock <panneau désactivé>
+execute if score buy spawner_pink matches 1 run say achat réussi
 scoreboard players set buy spawner_pink 0
 
 
