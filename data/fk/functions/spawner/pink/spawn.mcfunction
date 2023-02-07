@@ -5,7 +5,9 @@
  # Created by Binau
 ##
 
-execute if score cow spawner_pink matches 1 as @e[type=marker,tag=spawner_pink,limit=1] at @s run summon cow ~ ~1 ~
+execute store result score mob_count spawner_pink at @e[type=marker,tag=spawner_pink,limit=1] if entity @e[distance=..5,type=!minecraft:player,type=!minecraft:item]
+execute if score mob_count spawner_pink matches ..20 if score cow spawner_pink matches 1 as @e[type=marker,tag=spawner_pink,limit=1] at @s run summon cow ~ ~1 ~
+
 # execute if score xxx spawner_pink matches 1 as @e[type=marker,tag=spawner_pink,limit=1] at @s run summon xxx ~ ~1 ~
 # ...
 
