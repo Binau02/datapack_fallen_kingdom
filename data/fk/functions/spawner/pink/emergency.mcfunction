@@ -1,5 +1,5 @@
 ##
- # emergency_pink.mcfunction
+ # emergency.mcfunction
  # 
  #
  # Created by Binau

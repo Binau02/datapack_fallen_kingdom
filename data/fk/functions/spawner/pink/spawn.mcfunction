@@ -1,5 +1,5 @@
 ##
- # spawn_cows_pink.mcfunction
+ # spawn.mcfunction
  # 
  #
  # Created by Binau
