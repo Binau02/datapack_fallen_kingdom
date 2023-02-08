@@ -15,4 +15,7 @@ execute as @e[type=marker,tag=spawner_purple,limit=1] at @s if score witch spawn
 execute as @e[type=marker,tag=spawner_purple,limit=1] at @s if score witch spawner_purple matches 2 run setblock ~ ~-1 ~ spawner{SpawnData:{entity:{id:witch,PersistenceRequired:1,NoAI:1}},SpawnRange:4,SpawnCount:1,Delay:200,MinSpawnDelay:200,MaxSpawnDelay:200,RequiredPlayerRange:32,MaxNearbyEntities:10} replace
 execute as @e[type=marker,tag=spawner_purple,limit=1] at @s if score witch spawner_purple matches 3 run setblock ~ ~-1 ~ spawner{SpawnData:{entity:{id:witch,PersistenceRequired:1,NoAI:1}},SpawnRange:4,SpawnCount:1,Delay:100,MinSpawnDelay:100,MaxSpawnDelay:100,RequiredPlayerRange:32,MaxNearbyEntities:10} replace
 execute as @e[type=marker,tag=spawner_purple,limit=1] at @s if score witch spawner_purple matches 4 run setblock ~ ~-1 ~ spawner{SpawnData:{entity:{id:witch,PersistenceRequired:1,NoAI:1}},SpawnRange:4,SpawnCount:1,Delay:10,MinSpawnDelay:10,MaxSpawnDelay:10,RequiredPlayerRange:32,MaxNearbyEntities:10} replace
-function fk:spawner/purple/sign_witch_desactivatefunction fk:spawner/purple/sign_witch_desactivatefunction fk:spawner/purple/sign_witch_desactivatefunction fk:spawner/purple/sign_witch_desactivate
+function fk:spawner/purple/sign_witch_desactivate
+function fk:spawner/purple/sign_witch_desactivate
+function fk:spawner/purple/sign_witch_desactivate
+function fk:spawner/purple/sign_witch_desactivate
