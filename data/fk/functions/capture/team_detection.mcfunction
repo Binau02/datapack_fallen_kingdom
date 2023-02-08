@@ -23,5 +23,5 @@ execute as @e[type=armor_stand,tag=cap_point] if score @s capture_score matches 
 execute as @e[type=armor_stand,tag=cap_point] if score @s team_capturing matches 1 run function fk:capture/point_incr
 
 execute as @e[type=armor_stand,tag=cap_point] run function fk:capture/reward
-schedule function fk:capture/team_detection 1s
+schedule function fk:capture/team_detection 10t
 

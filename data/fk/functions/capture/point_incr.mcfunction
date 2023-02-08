@@ -29,3 +29,5 @@ execute if entity @p[team=white] if entity @s[team=white] run scoreboard players
 execute if entity @p[team=pink] if entity @s[team=pink] run scoreboard players add @s capture_score 1
 execute if entity @p[team=purple] if entity @s[team=purple] run scoreboard players add @s capture_score 1
 execute if entity @p[team=green] if entity @s[team=green] run scoreboard players add @s capture_score 1
+
+execute if score @s capture_score matches 10.. run scoreboard players set @s capture_score 10
