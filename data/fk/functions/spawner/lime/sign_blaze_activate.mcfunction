@@ -6,7 +6,7 @@
 ##
 
 
-execute as @e[type=marker,tag=spawner_lime,limit=1] at @s run setblock ~-2 ~1 ~-9 air
+execute if score blaze spawner_lime matches 1.. as @e[type=marker,tag=spawner_lime,limit=1] at @s run setblock ~-2 ~1 ~-9 air
 execute as @e[type=marker,tag=spawner_lime,limit=1] at @s run setblock ~-2 ~1 ~-9 minecraft:oak_wall_sign[facing=east]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function fk:spawner/lime/sign_blaze_desactivate"}}',Text2:'{"text":"activé","color":"green"}',Text3:'{"text":""}'}
 
 
