@@ -15,7 +15,7 @@ execute as @e[type=marker,tag=spawner_lime,limit=1] at @s if score skeleton spaw
 execute as @e[type=marker,tag=spawner_lime,limit=1] at @s if score skeleton spawner_lime matches 2 run setblock ~ ~-1 ~ spawner{SpawnData:{entity:{id:skeleton,PersistenceRequired:1,NoAI:1}},SpawnRange:4,SpawnCount:1,Delay:200,MinSpawnDelay:200,MaxSpawnDelay:200,RequiredPlayerRange:32,MaxNearbyEntities:10} replace
 execute as @e[type=marker,tag=spawner_lime,limit=1] at @s if score skeleton spawner_lime matches 3 run setblock ~ ~-1 ~ spawner{SpawnData:{entity:{id:skeleton,PersistenceRequired:1,NoAI:1}},SpawnRange:4,SpawnCount:1,Delay:100,MinSpawnDelay:100,MaxSpawnDelay:100,RequiredPlayerRange:32,MaxNearbyEntities:10} replace
 execute as @e[type=marker,tag=spawner_lime,limit=1] at @s if score skeleton spawner_lime matches 4 run setblock ~ ~-1 ~ spawner{SpawnData:{entity:{id:skeleton,PersistenceRequired:1,NoAI:1}},SpawnRange:4,SpawnCount:1,Delay:10,MinSpawnDelay:10,MaxSpawnDelay:10,RequiredPlayerRange:32,MaxNearbyEntities:10} replace
-function fk:spawner/lime/sign_skeleton_desactivate
-function fk:spawner/lime/sign_skeleton_desactivate
-function fk:spawner/lime/sign_skeleton_desactivate
-function fk:spawner/lime/sign_skeleton_desactivate
+function fk:spawner/lime/sign_pig_desactivate
+function fk:spawner/lime/sign_creeper_desactivate
+function fk:spawner/lime/sign_blaze_desactivate
+function fk:spawner/lime/sign_witch_desactivate

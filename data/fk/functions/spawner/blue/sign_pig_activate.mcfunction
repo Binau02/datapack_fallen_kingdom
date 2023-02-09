@@ -15,7 +15,7 @@ execute as @e[type=marker,tag=spawner_blue,limit=1] at @s if score pig spawner_b
 execute as @e[type=marker,tag=spawner_blue,limit=1] at @s if score pig spawner_blue matches 2 run setblock ~ ~-1 ~ spawner{SpawnData:{entity:{id:pig,PersistenceRequired:1,NoAI:1}},SpawnRange:4,SpawnCount:1,Delay:200,MinSpawnDelay:200,MaxSpawnDelay:200,RequiredPlayerRange:32,MaxNearbyEntities:10} replace
 execute as @e[type=marker,tag=spawner_blue,limit=1] at @s if score pig spawner_blue matches 3 run setblock ~ ~-1 ~ spawner{SpawnData:{entity:{id:pig,PersistenceRequired:1,NoAI:1}},SpawnRange:4,SpawnCount:1,Delay:100,MinSpawnDelay:100,MaxSpawnDelay:100,RequiredPlayerRange:32,MaxNearbyEntities:10} replace
 execute as @e[type=marker,tag=spawner_blue,limit=1] at @s if score pig spawner_blue matches 4 run setblock ~ ~-1 ~ spawner{SpawnData:{entity:{id:pig,PersistenceRequired:1,NoAI:1}},SpawnRange:4,SpawnCount:1,Delay:10,MinSpawnDelay:10,MaxSpawnDelay:10,RequiredPlayerRange:32,MaxNearbyEntities:10} replace
-function fk:spawner/blue/sign_pig_desactivate
-function fk:spawner/blue/sign_pig_desactivate
-function fk:spawner/blue/sign_pig_desactivate
-function fk:spawner/blue/sign_pig_desactivate
+function fk:spawner/blue/sign_skeleton_desactivate
+function fk:spawner/blue/sign_creeper_desactivate
+function fk:spawner/blue/sign_blaze_desactivate
+function fk:spawner/blue/sign_witch_desactivate
