@@ -6,8 +6,8 @@
 ##
 
 
-execute as @e[type=marker,tag=spawner_yellow,limit=1] at @s run setblock ~-2 ~1 ~-8 air
-execute as @e[type=marker,tag=spawner_yellow,limit=1] at @s run setblock ~-2 ~1 ~-8 minecraft:oak_wall_sign[facing=east]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function fk:spawner/yellow/sign_blaze_desactivate"}}',Text2:'{"text":"activé","color":"green"}',Text3:'{"text":""}'}
+execute as @e[type=marker,tag=spawner_yellow,limit=1] at @s run setblock ~-2 ~1 ~-9 air
+execute as @e[type=marker,tag=spawner_yellow,limit=1] at @s run setblock ~-2 ~1 ~-9 minecraft:oak_wall_sign[facing=east]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function fk:spawner/yellow/sign_blaze_desactivate"}}',Text2:'{"text":"activé","color":"green"}',Text3:'{"text":""}'}
 
 
 execute as @e[type=marker,tag=spawner_yellow,limit=1] at @s if score blaze spawner_yellow matches 1.. run setblock ~ ~-1 ~ deepslate_tiles
