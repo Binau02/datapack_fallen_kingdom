@@ -1,7 +1,7 @@
 execute if score @s capture_score matches 0 at @s run setblock ~2 ~-1 ~ light_gray_concrete
 execute if score @s capture_score matches 0 at @s run setblock ~2 ~-1 ~-1 light_gray_concrete
 execute if score @s capture_score matches 0 at @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 gray_concrete replace #fk:concrete
-execute if score @s capture_score matches 10.. if entity @s[team=blue] at @s run setblock ~ ~-1 ~ gray_stained_glass
+execute if score @s capture_score matches 0 at @s run setblock ~ ~-1 ~ gray_stained_glass
 
 execute if score @s capture_score matches 1 at @s run setblock ~2 ~-1 ~ white_concrete
 execute if score @s capture_score matches 1 at @s run setblock ~2 ~-1 ~-1 white_concrete
