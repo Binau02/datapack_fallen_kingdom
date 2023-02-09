@@ -44,14 +44,14 @@ execute if score @s capture_score matches 10.. at @s run setblock ~2 ~-1 ~1 whit
 
 #for each team which are red,blue,yellow,black,white,pink,purple,green
 
-execute if score @s capture_score matches 10.. if entity @s[team=blue] as @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 blue_concrete replace #fk:concrete
-execute if score @s capture_score matches 10.. if entity @s[team=red] as @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 red_concrete replace #fk:concrete
-execute if score @s capture_score matches 10.. if entity @s[team=yellow] as @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 yellow_concrete replace #fk:concrete
-execute if score @s capture_score matches 10.. if entity @s[team=black] as @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 black_concrete replace #fk:concrete
-execute if score @s capture_score matches 10.. if entity @s[team=white] as @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 white_concrete replace #fk:concrete
-execute if score @s capture_score matches 10.. if entity @s[team=pink] as @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 pink_concrete replace #fk:concrete
-execute if score @s capture_score matches 10.. if entity @s[team=purple] as @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 purple_concrete replace #fk:concrete
-execute if score @s capture_score matches 10.. if entity @s[team=green] as @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 green_concrete replace #fk:concrete
+execute if score @s capture_score matches 10.. if entity @s[team=blue] at @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 blue_concrete replace #fk:concrete
+execute if score @s capture_score matches 10.. if entity @s[team=red] at @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 red_concrete replace #fk:concrete
+execute if score @s capture_score matches 10.. if entity @s[team=yellow] at @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 yellow_concrete replace #fk:concrete
+execute if score @s capture_score matches 10.. if entity @s[team=black] at @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 black_concrete replace #fk:concrete
+execute if score @s capture_score matches 10.. if entity @s[team=white] at @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 white_concrete replace #fk:concrete
+execute if score @s capture_score matches 10.. if entity @s[team=pink] at @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 pink_concrete replace #fk:concrete
+execute if score @s capture_score matches 10.. if entity @s[team=purple] at @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 purple_concrete replace #fk:concrete
+execute if score @s capture_score matches 10.. if entity @s[team=green] at @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 green_concrete replace #fk:concrete
 
 
 
