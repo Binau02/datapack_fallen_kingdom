@@ -1,0 +1,1 @@
+kill @e[type=armor_stand,distance=..3,tag=cap_point,sort=nearest,limit=1]
