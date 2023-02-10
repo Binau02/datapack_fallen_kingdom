@@ -39,6 +39,7 @@ execute if score @s capture_score matches 8 at @s run setblock ~1 ~-1 ~2 light_g
 execute if score @s capture_score matches 9 at @s run setblock ~1 ~-1 ~2 white_concrete
 execute if score @s capture_score matches 9 at @s run setblock ~2 ~-1 ~2 light_gray_concrete
 execute if score @s capture_score matches 9 at @s run setblock ~2 ~-1 ~1 light_gray_concrete
+execute if score @s capture_score matches 9 at @s run setblock ~ ~-1 ~ gray_stained_glass
 
 execute if score @s capture_score matches 10.. at @s run setblock ~2 ~-1 ~2 white_concrete
 execute if score @s capture_score matches 10.. at @s run setblock ~2 ~-1 ~1 white_concrete
