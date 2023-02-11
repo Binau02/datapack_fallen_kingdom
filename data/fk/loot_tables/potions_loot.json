@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:empty",
+            "weight": 9,
+            "quality": -2
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 1,
+            "quality": 2,
+            "name": "fk:potions_loot"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "bonus_rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:experience_bottle",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
