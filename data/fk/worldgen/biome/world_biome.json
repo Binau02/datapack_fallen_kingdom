@@ -1,0 +1,58 @@
+{
+	"temperature": 0.95,
+	"downfall": 0.9,
+	"precipitation": "rain",
+	"category": "plains",
+	"effects": {
+	  "sky_color": 7907327,
+	  "fog_color": 12638463,
+	  "water_color": 4566514,
+	  "water_fog_color": 267827,
+	  "mood_sound": {
+		"sound": "minecraft:ambient.cave",
+		"tick_delay": 6000,
+		"block_search_extent": 8,
+		"offset": 2
+	  },
+	  "particle": {
+		"options": {
+		  "type": "miencraft:ash"
+		},
+		"probability": 0.01
+	  }
+	},
+	"spawners": {
+	  "monster": [],
+	  "creature": [],
+	  "ambient": [],
+	  "axolotls": [],
+	  "underground_water_creature": [],
+	  "water_creature": [],
+	  "water_ambient": [],
+	  "misc": []
+	},
+	"spawn_costs": {},
+	"carvers": {},
+	"features": [
+	  [],
+	  [],
+	  [],
+	  [],
+	  [],
+	  [],
+	  [],
+	  [],
+	  [],
+	  [
+		"minecraft:patch_tall_grass_2",
+		"minecraft:flower_plains",
+		"minecraft:patch_grass_plain",
+		"minecraft:brown_mushroom_normal",
+		"minecraft:red_mushroom_normal",
+		"minecraft:patch_sugar_cane",
+		"minecraft:patch_pumpkin"
+	  ],
+	  []
+	]
+  }
+  

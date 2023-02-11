@@ -1,0 +1,12 @@
+{
+	"type": "fk:world_type",
+	"generator": {
+		"type": "minecraft:noise",
+		"seed": 118867828,
+		"settings": "fk:world_settings",
+		"biome_source": {
+			"type": "minecraft:fixed",
+			"biome": "fk:world_biome"
+		}
+	}
+}
