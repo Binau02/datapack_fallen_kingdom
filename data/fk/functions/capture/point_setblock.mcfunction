@@ -1,3 +1,5 @@
+execute at @s run fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 light_gray_concrete replace air
+
 execute if score @s capture_score matches 0 at @s run setblock ~2 ~-1 ~ light_gray_concrete
 execute if score @s capture_score matches 0 at @s run setblock ~2 ~-1 ~-1 light_gray_concrete
 execute if score @s capture_score matches 0 at @s run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 gray_concrete replace #fk:concrete
