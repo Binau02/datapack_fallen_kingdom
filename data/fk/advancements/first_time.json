@@ -5,6 +5,6 @@
 		}
 	},
 	"rewards": {
-		"function": "fk:fisrt_time"
+		"function": "fk:first_time"
 	}
 }
