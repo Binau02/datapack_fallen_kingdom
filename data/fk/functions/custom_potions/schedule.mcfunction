@@ -3,7 +3,14 @@
 
 # as-at: AEC (Area Effect Cloud)
 
+execute store result score id custom_potions run data get entity @s Effects[0].Id
 
-data modify storage fk:data AecPotion set from entity @s Potion
 
-execute if data storage fk:data {AecPotion:"minecraft:fire_resistance"} run function fk:custom_potions/molotov_set_fire
+# Molotov
+execute if score id custom_potions matches 12 run function fk:custom_potions/molotov
+
+# Ender gas
+execute if score id custom_potions matches 9 run function fk:custom_potions/ender_gas
+
+# Smoke
+execute if score id custom_potions matches 25 run function fk:custom_potions/smoke
