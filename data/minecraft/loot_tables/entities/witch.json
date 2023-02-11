@@ -11,7 +11,7 @@
           },
           {
             "type": "minecraft:loot_table",
-            "weight": 1,
+            "weight": 2,
             "quality": 2,
             "name": "fk:potions_loot"
           }
