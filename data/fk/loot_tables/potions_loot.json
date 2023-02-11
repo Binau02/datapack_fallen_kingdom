@@ -5,29 +5,92 @@
         "rolls": 1,
         "entries": [
           {
-            "type": "minecraft:empty",
-            "weight": 9,
-            "quality": -2
-          },
-          {
-            "type": "minecraft:loot_table",
-            "weight": 1,
-            "quality": 2,
-            "name": "fk:potions_loot"
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "bonus_rolls": 1,
-        "entries": [
-          {
             "type": "minecraft:item",
-            "name": "minecraft:experience_bottle",
+            "weight": 4,
+            "name": "minecraft:potion",
             "functions": [
               {
-                "function": "minecraft:set_count",
-                "count": 2
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomPotionEffects:[{Id:5,Duration:600,Amplifier:0}],CustomPotionColor:15930907}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": "Strenght Potion"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 4,
+            "name": "minecraft:potion",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomPotionEffects:[{Id:1,Duration:600,Amplifier:0}],CustomPotionColor:1503731}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": "Speed Potion"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 4,
+            "name": "minecraft:potion",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomPotionEffects:[{Id:8,Duration:600,Amplifier:0}],CustomPotionColor:1951036}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": "Jump Boost Potion"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 4,
+            "name": "minecraft:potion",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomPotionEffects:[{Id:14,Duration:600,Amplifier:0}],CustomPotionColor:16777215}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": "Invisibility Potion"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 4,
+            "name": "minecraft:potion",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomPotionEffects:[{Id:3,Duration:2400,Amplifier:0}],CustomPotionColor:14151211}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": "Haste Potion"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:splash_potion",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomPotionEffects:[{Id:3,Duration:2400,Amplifier:0}],CustomPotionColor:14151211}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": "Curse Potion"
               }
             ]
           }
