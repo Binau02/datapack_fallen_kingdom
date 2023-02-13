@@ -7,7 +7,7 @@
 
 function fk:load_spawner
 function fk:load_register
-
+function fk:capture/capture_load
 
 say datapack fk loaded
 

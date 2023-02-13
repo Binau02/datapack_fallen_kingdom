@@ -86,7 +86,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'[{\"text\": \"God\\'s Potion\", \"italic\":false,\"color\": \"gold\"}]'},CustomPotionEffects:[{Id:5,Duration:150,Amplifier:2},{Id:10,Duration:150,Amplifier:1},{Id:2,Duration:150,Amplifier:1}],CustomPotionColor:13600790}"
+                "tag": "{display:{Name:'[{\"text\": \"God\\'s Potion\", \"italic\":false,\"color\": \"gold\"}]'},CustomPotionEffects:[{Id:5,Duration:150,Amplifier:1},{Id:10,Duration:150,Amplifier:1},{Id:2,Duration:150,Amplifier:1}],CustomPotionColor:13600790}"
               },
               {
                 "function": "minecraft:set_lore",
