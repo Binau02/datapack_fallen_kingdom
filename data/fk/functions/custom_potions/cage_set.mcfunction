@@ -12,4 +12,4 @@ tag @e[type=marker,tag=Cage.selection,limit=1] remove Cage.selection
 
 kill @s
 
-schedule function fk:custom_potions/cage_remove_a 10s
+schedule function fk:custom_potions/cage_remove_a 10s append
