@@ -10,7 +10,7 @@
 kill @e[type=!minecraft:player,type=!minecraft:marker,distance=..6]
 kill @e[type=!minecraft:player,type=!minecraft:marker,distance=..6]
 
-fill ~-2 ~2 ~-8 ~-2 ~2 ~-12 oak_wall_sign[facing=north]
+fill ~-8 ~2 ~-2 ~-12 ~2 ~-2 oak_wall_sign[facing=north]
 function fk:spawner/white/sign_pig_desactivate
 data merge block ~-2 ~2 ~-12 {Text1:'{"clickEvent":{"action":"run_command","value":"function fk:spawner/white/buy_pig"},"text":"pig"}',Text2:'["",{"text":"lvl "},{"score":{"name":"pig","objective":"spawner_white"}}]'}
 execute if score pig spawner_white matches 0 run data merge block ~-2 ~2 ~-12 {Text4:'{"text":"lvl 1 20$"}'}
