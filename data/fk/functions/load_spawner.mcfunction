@@ -65,5 +65,6 @@ scoreboard players set witch spawner_pink 0
 
 scoreboard objectives remove emergency
 scoreboard objectives add emergency trigger
+scoreboard players enable @a emergency
 
 scoreboard players set @a emergency 0
