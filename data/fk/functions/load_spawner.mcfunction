@@ -65,6 +65,7 @@ scoreboard players set witch spawner_pink 0
 
 scoreboard objectives remove emergency
 scoreboard objectives add emergency trigger
+
 function fk:spawner/red/emergency
 function fk:spawner/purple/emergency
 function fk:spawner/black/emergency
