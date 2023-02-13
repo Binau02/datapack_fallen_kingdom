@@ -42,5 +42,5 @@ execute if score witch spawner_red matches 1 run data merge block ~8 ~2 ~-2 {Tex
 execute if score witch spawner_red matches 2 run data merge block ~8 ~2 ~-2 {Text4:'{"text":"lvl 3 960$"}'}
 execute if score witch spawner_red matches 3 run data merge block ~8 ~2 ~-2 {Text4:'{"text":"lvl 4 1920$"}'}
 
-scoreboard players set @a[team=pink] emergency 0
-scoreboard players enable @a[team=pink] emergency
+scoreboard players set @a[team=red] emergency 0
+scoreboard players enable @a[team=red] emergency
