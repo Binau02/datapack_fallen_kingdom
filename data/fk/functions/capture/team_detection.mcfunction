@@ -9,14 +9,14 @@
 #execute as @e[type=marker,tag=cap_point_1,team=!green] if entity @a[distance=..10,team=green] run team leave @s
 
 execute run scoreboard players set @s team_capturing 0
-execute at @s if entity @a[distance=..5,team=red] run scoreboard players add @s team_capturing 1
-execute at @s if entity @a[distance=..5,team=blue] run scoreboard players add @s team_capturing 1
-execute at @s if entity @a[distance=..5,team=yellow] run scoreboard players add @s team_capturing 1
-execute at @s if entity @a[distance=..5,team=black] run scoreboard players add @s team_capturing 1
-execute at @s if entity @a[distance=..5,team=white] run scoreboard players add @s team_capturing 1
-execute at @s if entity @a[distance=..5,team=pink] run scoreboard players add @s team_capturing 1
-execute at @s if entity @a[distance=..5,team=purple] run scoreboard players add @s team_capturing 1
-execute at @s if entity @a[distance=..5,team=green] run scoreboard players add @s team_capturing 1
+execute if entity @a[distance=..5,team=red] run scoreboard players add @s team_capturing 1
+execute if entity @a[distance=..5,team=blue] run scoreboard players add @s team_capturing 1
+execute if entity @a[distance=..5,team=yellow] run scoreboard players add @s team_capturing 1
+execute if entity @a[distance=..5,team=black] run scoreboard players add @s team_capturing 1
+execute if entity @a[distance=..5,team=white] run scoreboard players add @s team_capturing 1
+execute if entity @a[distance=..5,team=pink] run scoreboard players add @s team_capturing 1
+execute if entity @a[distance=..5,team=purple] run scoreboard players add @s team_capturing 1
+execute if entity @a[distance=..5,team=green] run scoreboard players add @s team_capturing 1
 
 execute if score @s capture_score matches 0 run team leave @s
 
