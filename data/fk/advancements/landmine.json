@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:enter_block",
+			"conditions": {
+				"block": "crimson_button"
+			}
+		}
+	},
+	"rewards": {
+		"function": "fk:custom_potions/landmine"
+	}
+}
