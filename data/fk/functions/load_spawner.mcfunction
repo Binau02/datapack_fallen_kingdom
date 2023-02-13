@@ -64,6 +64,6 @@ scoreboard players set blaze spawner_pink 0
 scoreboard players set witch spawner_pink 0
 
 scoreboard objectives remove emergency
-scoreboard objectives add emergency dummy
+scoreboard objectives add emergency trigger
 
 scoreboard players set @a emergency 0
