@@ -6,7 +6,7 @@
 		"entries": [
 		  {
 			"type": "minecraft:empty",
-			"weight": 19
+			"weight": 18
 		  },
 		  {
 			"type": "minecraft:item",
@@ -25,6 +25,11 @@
 				}
 			  }
 			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:flint"
 		  }
 		]
 	  }

@@ -1,0 +1,40 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:empty",
+			"weight": 799
+		  },
+		  {
+			"type": "minecraft:loot_table",
+			"weight": 50,
+			"name": "fk:i/molotov"
+		  },
+		  {
+			"type": "minecraft:loot_table",
+			"weight": 50,
+			"name": "fk:i/ender_gas"
+		  },
+		  {
+			"type": "minecraft:loot_table",
+			"weight": 50,
+			"name": "fk:i/smoke"
+		  },
+		  {
+			"type": "minecraft:loot_table",
+			"weight": 50,
+			"name": "fk:i/cage"
+		  },
+		  {
+			"type": "minecraft:item",
+			"weight": 1,
+			"name": "minecraft:totem_of_undying"
+		  }
+		]
+	  }
+	]
+  }
+  
