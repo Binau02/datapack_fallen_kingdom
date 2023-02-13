@@ -66,12 +66,12 @@ scoreboard players set witch spawner_pink 0
 scoreboard objectives remove emergency
 scoreboard objectives add emergency trigger
 
-function fk:spawner/red/emergency
-function fk:spawner/purple/emergency
-function fk:spawner/black/emergency
-function fk:spawner/yellow/emergency
-function fk:spawner/blue/emergency
-function fk:spawner/white/emergency
-function fk:spawner/lime/emergency
-function fk:spawner/pink/emergency
+execute as @e[type=marker,tag=spawner_red,limit=1] at @s run function fk:spawner/red/emergency
+execute as @e[type=marker,tag=spawner_purple,limit=1] at @s run function fk:spawner/purple/emergency
+execute as @e[type=marker,tag=spawner_black,limit=1] at @s run function fk:spawner/black/emergency
+execute as @e[type=marker,tag=spawner_yellow,limit=1] at @s run function fk:spawner/yellow/emergency
+execute as @e[type=marker,tag=spawner_blue,limit=1] at @s run function fk:spawner/blue/emergency
+execute as @e[type=marker,tag=spawner_white,limit=1] at @s run function fk:spawner/white/emergency
+execute as @e[type=marker,tag=spawner_lime,limit=1] at @s run function fk:spawner/lime/emergency
+execute as @e[type=marker,tag=spawner_pink,limit=1] at @s run function fk:spawner/pink/emergency
 
