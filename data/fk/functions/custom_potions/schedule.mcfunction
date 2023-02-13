@@ -14,3 +14,7 @@ execute if score id custom_potions matches 9 run function fk:custom_potions/ende
 
 # Smoke
 execute if score id custom_potions matches 25 run function fk:custom_potions/smoke
+
+#Shelter
+execute if score id custom_potions matches 2 run function fk:custom_potions/set_shelter
+
