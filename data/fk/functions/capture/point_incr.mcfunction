@@ -32,4 +32,4 @@ execute if entity @p[team=green] if entity @s[team=green] run scoreboard players
 
 execute if score @s capture_score matches 10.. run scoreboard players set @s capture_score 10
 
-execute as @s run function fk:capture/point_setblock
+execute at @s run function fk:capture/point_setblock
