@@ -20,7 +20,7 @@
 		"size_vertical": 2,
 		"sampling": {
 			"xz_scale": 1,
-			"y_scale": 1,
+			"y_scale": 0.1,
 			"xz_factor": 80,
 			"y_factor": 1000
 		},
