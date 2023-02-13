@@ -8,8 +8,8 @@ function fk:spawner/white/sign_pig_desactivate
 function fk:spawner/white/sign_creeper_desactivate
 function fk:spawner/white/sign_evoker_desactivate
 function fk:spawner/white/sign_witch_desactivate
-execute if score skeleton spawner_white matches 1.. as @e[type=marker,tag=spawner_white,limit=1] at @s run setblock ~-2 ~1 ~-11 air
-execute as @e[type=marker,tag=spawner_white,limit=1] at @s run setblock ~-2 ~1 ~-11 minecraft:oak_wall_sign[facing=north]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function fk:spawner/white/sign_skeleton_desactivate"}}',Text2:'{"text":"activé","color":"green"}',Text3:'{"text":""}'}
+execute if score skeleton spawner_white matches 1.. as @e[type=marker,tag=spawner_white,limit=1] at @s run setblock ~-11 ~1 ~2 air
+execute as @e[type=marker,tag=spawner_white,limit=1] at @s run setblock ~-11 ~1 ~2 minecraft:oak_wall_sign[facing=north]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function fk:spawner/white/sign_skeleton_desactivate"}}',Text2:'{"text":"activé","color":"green"}',Text3:'{"text":""}'}
 
 execute as @e[type=marker,tag=spawner_white,limit=1] at @s if score skeleton spawner_white matches 1.. run setblock ~ ~-1 ~ deepslate_tiles
 execute as @e[type=marker,tag=spawner_white,limit=1] at @s if score skeleton spawner_white matches 1 run setblock ~ ~-1 ~ spawner{SpawnData:{entity:{id:"skeleton",PersistenceRequired:1,NoAI:1}},SpawnRange:4,SpawnCount:1,Delay:400,MinSpawnDelay:400,MaxSpawnDelay:400,RequiredPlayerRange:32,MaxNearbyEntities:10} replace
