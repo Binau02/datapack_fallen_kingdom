@@ -10,11 +10,12 @@ execute store result score id custom_potions run data get entity @s Effects[0].I
 execute if score id custom_potions matches 12 run function fk:custom_potions/molotov
 
 # Ender gas
-execute if score id custom_potions matches 9 run function fk:custom_potions/ender_gas
+execute if score id custom_potions matches 9 if entity @s[tag=!EnderGas] run function fk:custom_potions/ender_gas_start
+execute if entity @s[tag=EnderGas] run function fk:custom_potions/ender_gas_tp
 
 # Smoke
 execute if score id custom_potions matches 25 run function fk:custom_potions/smoke
 
-#Shelter
-execute if score id custom_potions matches 2 run function fk:custom_potions/set_cage
+# Cage
+execute if score id custom_potions matches 2 run function fk:custom_potions/cage_set
 
