@@ -66,7 +66,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'[{\"text\": \"Curse Potion\", \"italic\":false,\"color\": \"purple\"}]'},CustomPotionEffects:[{Id:20,Duration:150,Amplifier:3},{Id:1,Duration:100,Amplifier:2},{Id:9,Duration:200,Amplifier:5},{Id:7,Duration:100,Amplifier:0}],CustomPotionColor:526344}"
+                "tag": "{display:{Name:'[{\"text\": \"Curse Potion\", \"italic\":false,\"color\": \"purple\"}]'},CustomPotionEffects:[{Id:20,Duration:100,Amplifier:2},{Id:1,Duration:100,Amplifier:2},{Id:9,Duration:200,Amplifier:5},{Id:7,Duration:100,Amplifier:0}],CustomPotionColor:526344}"
               },
               {
                 "function": "minecraft:set_lore",
