@@ -1,4 +1,5 @@
-execute at @s run summon marker ~ ~ ~ {Tags:["Shelter"]}
+execute at @s run summon marker ~ ~ ~ {Tags:["Cage"]}
+execute at @s run spreadplayers ~ ~ 2 6 false @a[distance=..10]
 execute at @s run fill ~7 ~5 ~7 ~-7 ~-5 ~-7 minecraft:glass replace air
 execute at @s run fill ~7 ~5 ~7 ~-7 ~-5 ~-7 minecraft:glass replace grass
 execute at @s run fill ~6 ~4 ~6 ~-6 ~-4 ~-6 minecraft:barrier replace glass
