@@ -22,7 +22,7 @@
 			"xz_scale": 1,
 			"y_scale": 0.001,
 			"xz_factor": 80,
-			"y_factor": 7000
+			"y_factor": 1000
 		},
 		"bottom_slide": {
 			"target": 0.1171875,
