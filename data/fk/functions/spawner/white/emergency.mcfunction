@@ -29,12 +29,12 @@ execute if score creeper spawner_white matches 0 run data merge block ~-2 ~2 ~-1
 execute if score creeper spawner_white matches 1 run data merge block ~-2 ~2 ~-10 {Text4:'{"text":"lvl 2 320$"}'}
 execute if score creeper spawner_white matches 2 run data merge block ~-2 ~2 ~-10 {Text4:'{"text":"lvl 3 640$"}'}
 execute if score creeper spawner_white matches 3 run data merge block ~-2 ~2 ~-10 {Text4:'{"text":"lvl 4 1280$"}'}
-function fk:spawner/white/sign_blaze_desactivate
-data merge block ~-2 ~2 ~-9 {Text1:'{"clickEvent":{"action":"run_command","value":"function fk:spawner/white/buy_blaze"},"text":"blaze"}',Text2:'["",{"text":"lvl "},{"score":{"name":"blaze","objective":"spawner_white"}}]'}
-execute if score blaze spawner_white matches 0 run data merge block ~-2 ~2 ~-9 {Text4:'{"text":"lvl 1 160$"}'}
-execute if score blaze spawner_white matches 1 run data merge block ~-2 ~2 ~-9 {Text4:'{"text":"lvl 2 320$"}'}
-execute if score blaze spawner_white matches 2 run data merge block ~-2 ~2 ~-9 {Text4:'{"text":"lvl 3 640$"}'}
-execute if score blaze spawner_white matches 3 run data merge block ~-2 ~2 ~-9 {Text4:'{"text":"lvl 4 1280$"}'}
+function fk:spawner/white/sign_evoker_desactivate
+data merge block ~-2 ~2 ~-9 {Text1:'{"clickEvent":{"action":"run_command","value":"function fk:spawner/white/buy_evoker"},"text":"evoker"}',Text2:'["",{"text":"lvl "},{"score":{"name":"evoker","objective":"spawner_white"}}]'}
+execute if score evoker spawner_white matches 0 run data merge block ~-2 ~2 ~-9 {Text4:'{"text":"lvl 1 160$"}'}
+execute if score evoker spawner_white matches 1 run data merge block ~-2 ~2 ~-9 {Text4:'{"text":"lvl 2 320$"}'}
+execute if score evoker spawner_white matches 2 run data merge block ~-2 ~2 ~-9 {Text4:'{"text":"lvl 3 640$"}'}
+execute if score evoker spawner_white matches 3 run data merge block ~-2 ~2 ~-9 {Text4:'{"text":"lvl 4 1280$"}'}
 function fk:spawner/white/sign_witch_desactivate
 data merge block ~-2 ~2 ~-8 {Text1:'{"clickEvent":{"action":"run_command","value":"function fk:spawner/white/buy_witch"},"text":"witch"}',Text2:'["",{"text":"lvl "},{"score":{"name":"witch","objective":"spawner_white"}}]'}
 execute if score witch spawner_white matches 0 run data merge block ~-2 ~2 ~-8 {Text4:'{"text":"lvl 1 240$"}'}
