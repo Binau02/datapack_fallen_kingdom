@@ -11,12 +11,12 @@ kill @e[type=!minecraft:player,type=!minecraft:marker,distance=..6]
 kill @e[type=!minecraft:player,type=!minecraft:marker,distance=..6]
 
 fill ~8 ~2 ~-2 ~12 ~2 ~-2 oak_wall_sign[facing=south]
-function fk:spawner/red/sign_pig_desactivate
-data merge block ~12 ~2 ~-2 {Text1:'{"clickEvent":{"action":"run_command","value":"function fk:spawner/red/buy_pig"},"text":"pig"}',Text2:'["",{"text":"lvl "},{"score":{"name":"pig","objective":"spawner_red"}}]'}
-execute if score pig spawner_red matches 0 run data merge block ~12 ~2 ~-2 {Text4:'{"text":"lvl 1 20$"}'}
-execute if score pig spawner_red matches 1 run data merge block ~12 ~2 ~-2 {Text4:'{"text":"lvl 2 40$"}'}
-execute if score pig spawner_red matches 2 run data merge block ~12 ~2 ~-2 {Text4:'{"text":"lvl 3 80$"}'}
-execute if score pig spawner_red matches 3 run data merge block ~12 ~2 ~-2 {Text4:'{"text":"lvl 4 160$"}'}
+function fk:spawner/red/sign_hoglin_desactivate
+data merge block ~12 ~2 ~-2 {Text1:'{"clickEvent":{"action":"run_command","value":"function fk:spawner/red/buy_hoglin"},"text":"hoglin"}',Text2:'["",{"text":"lvl "},{"score":{"name":"hoglin","objective":"spawner_red"}}]'}
+execute if score hoglin spawner_red matches 0 run data merge block ~12 ~2 ~-2 {Text4:'{"text":"lvl 1 20$"}'}
+execute if score hoglin spawner_red matches 1 run data merge block ~12 ~2 ~-2 {Text4:'{"text":"lvl 2 40$"}'}
+execute if score hoglin spawner_red matches 2 run data merge block ~12 ~2 ~-2 {Text4:'{"text":"lvl 3 80$"}'}
+execute if score hoglin spawner_red matches 3 run data merge block ~12 ~2 ~-2 {Text4:'{"text":"lvl 4 160$"}'}
 function fk:spawner/red/sign_skeleton_desactivate
 data merge block ~11 ~2 ~-2 {Text1:'{"clickEvent":{"action":"run_command","value":"function fk:spawner/red/buy_skeleton"},"text":"skeleton"}',Text2:'["",{"text":"lvl "},{"score":{"name":"skeleton","objective":"spawner_red"}}]'}
 execute if score skeleton spawner_red matches 0 run data merge block ~11 ~2 ~-2 {Text4:'{"text":"lvl 1 80$"}'}
