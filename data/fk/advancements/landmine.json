@@ -8,6 +8,6 @@
 		}
 	},
 	"rewards": {
-		"function": "fk:custom_potions/landmine"
+		"function": "fk:custom_potions/landmine_start"
 	}
 }
