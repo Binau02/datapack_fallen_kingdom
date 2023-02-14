@@ -11,7 +11,6 @@ function fk:capture/capture_load
 
 say datapack fk loaded
 
-
 scoreboard objectives add custom_potions dummy
 
 scoreboard objectives remove cage_rank
