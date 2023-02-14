@@ -1,3 +1,3 @@
 advancement revoke @s only fk:tnt_place
 
-execute anchored eyes positioned ^ ^ ^ run function fk:tnt/raycast_tnt
+fill ~-6 ~-6 ~-6 ~6 ~6 ~6 command_block{auto:true,Command:"function fk:tnt/tnt_set"} replace tnt
