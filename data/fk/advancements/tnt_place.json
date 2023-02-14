@@ -1,0 +1,14 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "minecraft:tnt"
+        }
+      }
+    },
+    "rewards": {
+      "function": "fk:tnt/tnt_placed"
+    }
+  }
+  
