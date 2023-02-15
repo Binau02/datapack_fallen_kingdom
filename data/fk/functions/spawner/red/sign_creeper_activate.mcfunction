@@ -4,7 +4,7 @@
  #
  # Created by Binau
 ##
-function fk:spawner/red/sign_pig_desactivate
+function fk:spawner/red/sign_hoglin_desactivate
 function fk:spawner/red/sign_skeleton_desactivate
 function fk:spawner/red/sign_evoker_desactivate
 function fk:spawner/red/sign_witch_desactivate

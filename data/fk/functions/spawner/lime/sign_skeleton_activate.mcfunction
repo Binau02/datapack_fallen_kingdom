@@ -4,7 +4,7 @@
  #
  # Created by Binau
 ##
-function fk:spawner/lime/sign_pig_desactivate
+function fk:spawner/lime/sign_hoglin_desactivate
 function fk:spawner/lime/sign_creeper_desactivate
 function fk:spawner/lime/sign_evoker_desactivate
 function fk:spawner/lime/sign_witch_desactivate
