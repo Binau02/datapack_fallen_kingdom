@@ -9,8 +9,6 @@ function fk:load_spawner
 function fk:load_register
 function fk:capture/capture_load
 
-say datapack fk loaded
-
 scoreboard objectives add custom_potions dummy
 
 scoreboard objectives remove cage_rank
@@ -22,3 +20,8 @@ scoreboard players set max cage_rank 1
 
 
 schedule function fk:schedule_10t 10t replace
+
+function fk:detect_spawn
+
+
+say datapack fk loaded
