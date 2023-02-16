@@ -14,7 +14,10 @@ say datapack fk loaded
 scoreboard objectives add custom_potions dummy
 
 scoreboard objectives remove cage_rank
+scoreboard objectives remove team_kill
+
 scoreboard objectives add cage_rank dummy
+scoreboard objectives add team_kill dummy
 scoreboard players set max cage_rank 1
 
 

@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "type": "minecraft:slime",
+            "nbt": "{Tags:[\"core_slime\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "fk:core/core_destroyed"
+    }
+  }
+  

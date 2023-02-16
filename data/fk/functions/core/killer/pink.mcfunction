@@ -1,0 +1,1 @@
+scoreboard players set team_killer team_kill 6
