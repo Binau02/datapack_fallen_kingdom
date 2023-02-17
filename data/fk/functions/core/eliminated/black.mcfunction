@@ -8,7 +8,7 @@ execute if score team_killer team_kill matches 7 run execute as @r[team=black] r
 execute if score team_killer team_kill matches 8 run execute as @r[team=black] run function fk:teams/join_green
 
 effect give @a[team=black] instant_health 10 100 true
-execute at @e[type=end_crystal,tag=black_core] run function fk:core/core_death
+execute at @e[type=end_crystal,tag=black_core] run function fk:core/core_death/black
 execute at @a[team=black] run summon lightning_bolt ~ ~-5 ~
 team join spec @a[team=black]
 
