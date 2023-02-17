@@ -7,3 +7,5 @@ execute as @e[type=marker,tag=Cage] if score @s cage_time matches 20.. run funct
 execute as @e[type=armor_stand,tag=cap_point] at @s run function fk:capture/team_detection
 
 execute as @e[type=area_effect_cloud] at @s run function fk:custom_potions/
+
+function fk:team_alive_test

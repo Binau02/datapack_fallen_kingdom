@@ -8,8 +8,10 @@ execute if score team_killer team_kill matches 7 run execute as @r[team=white] r
 execute if score team_killer team_kill matches 8 run execute as @r[team=white] run function fk:teams/join_green
 
 effect give @a[team=white] instant_health 10 100 true
-execute at @e[type=end_crystal,tag=white_core] run function fk:core/core_death/white
+execute at @e[type=end_crystal,tag=white_core] run function fk:core/core_death
 execute at @a[team=white] run summon lightning_bolt ~ ~-5 ~
 team join spec @a[team=white]
 
 tellraw @a [{"text":"L'équipe ","color":"gray","bold":false},{"text":"BLANCHE","color":"white","bold":true},{"text":" a été éliminée !","color":"gray","bold":false}]
+scoreboard players set white_alive non_player 0
+
