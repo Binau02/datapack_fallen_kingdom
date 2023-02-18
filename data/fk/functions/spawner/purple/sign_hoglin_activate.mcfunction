@@ -9,7 +9,7 @@ function fk:spawner/purple/sign_creeper_desactivate
 function fk:spawner/purple/sign_evoker_desactivate
 function fk:spawner/purple/sign_witch_desactivate
 execute if score hoglin spawner_purple matches 1.. as @e[type=marker,tag=spawner_purple,limit=1] at @s run setblock ~12 ~1 ~-2 air
-execute as @e[type=marker,tag=spawner_purple,limit=1] at @s run setblock ~12 ~1 ~-2 minecraft:oak_wall_sign[facing=south]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function fk:spawner/purple/sign_hoglin_desactivate"}}',Text2:'{"text":"activé","color":"green"}',Text3:'{"text":""}'}
+execute as @e[type=marker,tag=spawner_purple,limit=1] at @s run setblock ~12 ~1 ~-2 minecraft:oak_wall_sign[facing=south]{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function fk:spawner/purple/sign_hoglin_desactivate"}}',Text2:'{"text":"activated","color":"green"}',Text3:'{"text":""}'}
 
 execute as @e[type=marker,tag=spawner_purple,limit=1] at @s if score hoglin spawner_purple matches 1.. run setblock ~ ~-1 ~ deepslate_tiles
 execute as @e[type=marker,tag=spawner_purple,limit=1] at @s if score hoglin spawner_purple matches 1 run setblock ~ ~-1 ~ spawner{SpawnData:{entity:{id:"hoglin",PersistenceRequired:1,NoAI:1}},SpawnRange:4,SpawnCount:1,Delay:400,MinSpawnDelay:400,MaxSpawnDelay:400,RequiredPlayerRange:32,MaxNearbyEntities:10} replace

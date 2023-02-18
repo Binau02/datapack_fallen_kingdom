@@ -8,7 +8,7 @@
 scoreboard players set buy spawner_yellow 0
 
 execute if score witch spawner_yellow matches 0 if score buy spawner_yellow matches 0 run execute if score yellow Coins matches 240.. run scoreboard players set buy spawner_yellow 1
-execute if score witch spawner_yellow matches 0 if score buy spawner_yellow matches 0 run execute unless score yellow Coins matches 240.. run tellraw @s ["",{"text":"You don't have enough coins","italic":true}]
+execute if score witch spawner_yellow matches 0 if score buy spawner_yellow matches 0 run execute unless score yellow Coins matches 240.. run tellraw @s ["",{"text":"You don't have enough coins","italic":true,"color":"gray"}]
 execute if score buy spawner_yellow matches 1 run scoreboard players remove yellow Coins 240
 execute if score buy spawner_yellow matches 1 run scoreboard players add witch spawner_yellow 1
 execute as @e[type=marker,tag=spawner_yellow,limit=1] at @s if score buy spawner_yellow matches 1 run data merge block ~2 ~2 ~8 {Text2:'{"text":"lvl 1"}',Text4:'{"text":"lvl 2 480$"}'}
@@ -17,7 +17,7 @@ execute if score buy spawner_yellow matches 1 run tellraw @a[team=yellow] ["",{"
 
 
 execute if score witch spawner_yellow matches 1 if score buy spawner_yellow matches 0 if score yellow Coins matches 480.. run scoreboard players set buy spawner_yellow 2
-execute if score witch spawner_yellow matches 1 if score buy spawner_yellow matches 0 unless score yellow Coins matches 480.. run tellraw @s ["",{"text":"You don't have enough coins","italic":true}]
+execute if score witch spawner_yellow matches 1 if score buy spawner_yellow matches 0 unless score yellow Coins matches 480.. run tellraw @s ["",{"text":"You don't have enough coins","italic":true,"color":"gray"}]
 execute if score buy spawner_yellow matches 2 run scoreboard players remove yellow Coins 240
 execute if score buy spawner_yellow matches 2 run scoreboard players add witch spawner_yellow 1
 execute as @e[type=marker,tag=spawner_yellow,limit=1] at @s if score buy spawner_yellow matches 2 run data merge block ~2 ~2 ~8 {Text2:'{"text":"lvl 2"}',Text4:'{"text":"lvl 3 960$"}'}
@@ -26,7 +26,7 @@ execute if score buy spawner_yellow matches 2 run tellraw @a[team=yellow] ["",{"
 
 
 execute if score witch spawner_yellow matches 2 if score buy spawner_yellow matches 0 if score yellow Coins matches 960.. run scoreboard players set buy spawner_yellow 3
-execute if score witch spawner_yellow matches 2 if score buy spawner_yellow matches 0 unless score yellow Coins matches 960.. run tellraw @s ["",{"text":"You don't have enough coins","italic":true}]
+execute if score witch spawner_yellow matches 2 if score buy spawner_yellow matches 0 unless score yellow Coins matches 960.. run tellraw @s ["",{"text":"You don't have enough coins","italic":true,"color":"gray"}]
 execute if score buy spawner_yellow matches 3 run scoreboard players remove yellow Coins 960
 execute if score buy spawner_yellow matches 3 run scoreboard players add witch spawner_yellow 1
 execute as @e[type=marker,tag=spawner_yellow,limit=1] at @s if score buy spawner_yellow matches 3 run data merge block ~2 ~2 ~8 {Text2:'{"text":"lvl 3"}',Text4:'{"text":"lvl 4 1920$"}'}
@@ -35,7 +35,7 @@ execute if score buy spawner_yellow matches 3 run tellraw @a[team=yellow] ["",{"
 
 
 execute if score witch spawner_yellow matches 3 if score buy spawner_yellow matches 0 if score yellow Coins matches 1920.. run scoreboard players set buy spawner_yellow 4
-execute if score witch spawner_yellow matches 3 if score buy spawner_yellow matches 0 unless score yellow Coins matches 1920.. run tellraw @s ["",{"text":"You don't have enough coins","italic":true}]
+execute if score witch spawner_yellow matches 3 if score buy spawner_yellow matches 0 unless score yellow Coins matches 1920.. run tellraw @s ["",{"text":"You don't have enough coins","italic":true,"color":"gray"}]
 execute if score buy spawner_yellow matches 4 run scoreboard players remove yellow Coins 1920
 execute if score buy spawner_yellow matches 4 run scoreboard players add witch spawner_yellow 1
 execute as @e[type=marker,tag=spawner_yellow,limit=1] at @s if score buy spawner_yellow matches 4 run data merge block ~2 ~2 ~8 {Text2:'{"text":"lvl 4"}',Text4:'{"text":""}'}
