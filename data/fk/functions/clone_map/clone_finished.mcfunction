@@ -1,4 +1,5 @@
 worldborder set 300
+kill @e[type=marker,tag=marker3]
 tp @a @e[type=marker,tag=spawn,limit=1]
 gamemode adventure @a
 

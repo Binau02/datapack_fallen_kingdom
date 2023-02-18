@@ -15,10 +15,13 @@ title @a[tag=marker3] title {"text":"DON'T MOVE !","color":"red","bold":true,"un
 
 #set min(X,Z) of SRC area (keep in mind the offset of the DEST area)
 tp @a[tag=marker1] -150 64 -150
+execute at @a[tag=marker1] run summon marker ~ ~ ~ {Tags:["marker1","marker3"]}
 #end of SRC area
 
 #set min(X,Z) of DEST area
 tp @a[tag=marker2] -1150 64 -150
+execute at @a[tag=marker2] run summon marker ~ ~ ~ {Tags:["marker2","marker3"]}
+
 #end of DEST area
 
 execute at @a[tag=marker3] run playsound minecraft:block.anvil.destroy ambient @a[tag=marker3] ~ ~ ~ 5 1 1
