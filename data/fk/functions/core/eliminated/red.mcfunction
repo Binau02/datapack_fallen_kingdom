@@ -12,7 +12,7 @@ execute at @e[type=end_crystal,tag=red_core] run function fk:core/core_death
 execute at @a[team=red] run summon lightning_bolt ~ ~-5 ~
 team join spec @a[team=red]
 
-tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"L'équipe ","color":"gray","bold":false},{"text":"ROUGE","color":"red","bold":true},{"text":" a été éliminée !","color":"gray","bold":false}]
+tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"The","color":"gray","bold":false},{"text":" red ","color":"red","bold":true},{"text":"team has been eliminated !","color":"gray","bold":false}]
 scoreboard players set red_alive non_player 0
 
 
