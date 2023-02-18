@@ -7,28 +7,28 @@ effect give @a saturation 1000000 200 true
 clear @a
 give @a stick{Enchantments:[{id:"knockback",lvl:5}]} 64
 
-execute if entity @a[tag=WINNER,team=red] run tellraw @a [{"text":"The","color":"white","bold":true},{"text":" RED ","color":"red","bold":true},{"text":"team won the game!","color":"white","bold":true}]
+execute if entity @a[tag=WINNER,team=red] run tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"The","color":"white","bold":true},{"text":" RED ","color":"red","bold":true},{"text":"team won the game!","color":"white","bold":true}]
 execute if entity @a[tag=WINNER,team=red] run title @a title [{"text":"RED","color":"red","bold":true},{"text":" team won !","color":"white","bold":false}]
 
-execute if entity @a[tag=WINNER,team=blue] run tellraw @a [{"text":"The","color":"white","bold":true},{"text":" BLUE ","color":"blue","bold":true},{"text":"team won the game!","color":"white","bold":true}]
+execute if entity @a[tag=WINNER,team=blue] run tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"The","color":"white","bold":true},{"text":" BLUE ","color":"blue","bold":true},{"text":"team won the game!","color":"white","bold":true}]
 execute if entity @a[tag=WINNER,team=blue] run title @a title [{"text":"BLUE","color":"blue","bold":true},{"text":" team won !","color":"white","bold":false}]
 
-execute if entity @a[tag=WINNER,team=green] run tellraw @a [{"text":"The","color":"white","bold":true},{"text":" GREEN ","color":"green","bold":true},{"text":"team won the game!","color":"white","bold":true}]
+execute if entity @a[tag=WINNER,team=green] run tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"The","color":"white","bold":true},{"text":" GREEN ","color":"green","bold":true},{"text":"team won the game!","color":"white","bold":true}]
 execute if entity @a[tag=WINNER,team=green] run title @a title [{"text":"GREEN","color":"green","bold":true},{"text":" team won !","color":"white","bold":false}]
 
-execute if entity @a[tag=WINNER,team=yellow] run tellraw @a [{"text":"The","color":"white","bold":true},{"text":" YELLOW ","color":"yellow","bold":true},{"text":"team won the game!","color":"white","bold":true}]
+execute if entity @a[tag=WINNER,team=yellow] run tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"The","color":"white","bold":true},{"text":" YELLOW ","color":"yellow","bold":true},{"text":"team won the game!","color":"white","bold":true}]
 execute if entity @a[tag=WINNER,team=yellow] run title @a title [{"text":"YELLOW","color":"yellow","bold":true},{"text":" team won !","color":"white","bold":false}]
 
-execute if entity @a[tag=WINNER,team=black] run tellraw @a [{"text":"The","color":"white","bold":true},{"text":" BLACK ","color":"black","bold":true},{"text":"team won the game!","color":"white","bold":true}]
+execute if entity @a[tag=WINNER,team=black] run tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"The","color":"white","bold":true},{"text":" BLACK ","color":"black","bold":true},{"text":"team won the game!","color":"white","bold":true}]
 execute if entity @a[tag=WINNER,team=black] run title @a title [{"text":"BLACK","color":"black","bold":true},{"text":" team won !","color":"white","bold":false}]
 
-execute if entity @a[tag=WINNER,team=white] run tellraw @a [{"text":"The","color":"white","bold":true},{"text":" WHITE ","color":"white","bold":true},{"text":"team won the game!","color":"white","bold":true}]
+execute if entity @a[tag=WINNER,team=white] run tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"The","color":"white","bold":true},{"text":" WHITE ","color":"white","bold":true},{"text":"team won the game!","color":"white","bold":true}]
 execute if entity @a[tag=WINNER,team=white] run title @a title [{"text":"WHITE","color":"white","bold":true},{"text":" team won !","color":"white","bold":false}]
 
-execute if entity @a[tag=WINNER,team=pink] run tellraw @a [{"text":"The","color":"white","bold":true},{"text":" PINK ","color":"light_purple","bold":true},{"text":"team won the game!","color":"white","bold":true}]
+execute if entity @a[tag=WINNER,team=pink] run tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"The","color":"white","bold":true},{"text":" PINK ","color":"light_purple","bold":true},{"text":"team won the game!","color":"white","bold":true}]
 execute if entity @a[tag=WINNER,team=pink] run title @a title [{"text":"PINK","color":"light_purple","bold":true},{"text":" team won !","color":"white","bold":false}]
 
-execute if entity @a[tag=WINNER,team=purple] run tellraw @a [{"text":"The","color":"white","bold":true},{"text":" PURPLE ","color":"dark_purple","bold":true},{"text":"team won the game!","color":"white","bold":true}]
+execute if entity @a[tag=WINNER,team=purple] run tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"The","color":"white","bold":true},{"text":" PURPLE ","color":"dark_purple","bold":true},{"text":"team won the game!","color":"white","bold":true}]
 execute if entity @a[tag=WINNER,team=purple] run title @a title [{"text":"PURPLE","color":"dark_purple","bold":true},{"text":" team won !","color":"white","bold":false}]
 
 function fk:win_effect

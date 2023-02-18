@@ -24,7 +24,10 @@ scoreboard objectives remove health
 scoreboard objectives remove non_player
 scoreboard objectives remove Kills
 scoreboard objectives remove Deaths
+scoreboard objectives remove clone 
 
+
+scoreboard objectives add clone dummy
 scoreboard objectives add cage_time dummy
 scoreboard objectives add team_kill dummy
 scoreboard objectives add custom_potions dummy
@@ -43,10 +46,10 @@ scoreboard objectives setdisplay belowName health
 execute store result score nb_players nb_players if entity @a
 execute store result score nb_spawn nb_spawn if entity @a
 scoreboard players operation @a spawn = nb_spawn nb_spawn
-
+scoreboard players set clone_timer clone 0
 schedule function fk:schedule_10t 10t replace
 # detect_spawn
 function fk:detect_spawn
 
 
-say datapack fk loaded
+tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"Fallen Kingdom by Binau & Doriantrn LOADED.","color":"gold"}]

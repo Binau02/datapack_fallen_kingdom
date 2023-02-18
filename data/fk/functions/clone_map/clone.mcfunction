@@ -10,12 +10,13 @@ execute if score Xiter clone matches 1.. at @e[type=marker,tag=marker1] run tp @
 execute if score Xiter clone matches 1.. at @e[type=marker,tag=marker2] run tp @e[tag=marker2] ~11 ~ ~
 
 #set X (1st one) to -(XIter-1)*11
-execute if score Xiter clone matches 0 at @e[type=marker,tag=marker1] run tp @a[tag=marker1] ~-319 ~ ~11
-execute if score Xiter clone matches 0 at @e[type=marker,tag=marker2] run tp @a[tag=marker2] ~-319 ~ ~11
+execute if score Xiter clone matches 0 at @e[type=marker,tag=marker1] run tp @e[tag=marker1] ~-319 ~ ~11
+execute if score Xiter clone matches 0 at @e[type=marker,tag=marker2] run tp @e[tag=marker2] ~-319 ~ ~11
 #end
 
 
 execute unless score Ziter clone = LIMIT clone run schedule function fk:clone_map/clone 10t
+execute if score Ziter clone = LIMIT clone run tellraw @a [{"text":"[","color":"white"},{"text":"CLONE","color":"green"},{"text":"] ","color":"white"},{"text":"Clone map finished.","color":"green"}]
 execute if score Ziter clone = LIMIT clone run function fk:clone_map/clone_finished
 
 

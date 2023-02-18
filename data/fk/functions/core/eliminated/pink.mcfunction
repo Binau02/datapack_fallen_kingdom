@@ -12,6 +12,6 @@ execute at @e[type=end_crystal,tag=pink_core] run function fk:core/core_death
 execute at @a[team=pink] run summon lightning_bolt ~ ~-5 ~
 team join spec @a[team=pink]
 
-tellraw @a [{"text":"L'équipe ","color":"gray","bold":false},{"text":"ROSE","color":"light_purple","bold":true},{"text":" a été éliminée !","color":"gray","bold":false}]
+tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"L'équipe ","color":"gray","bold":false},{"text":"ROSE","color":"light_purple","bold":true},{"text":" a été éliminée !","color":"gray","bold":false}]
 scoreboard players set pink_alive non_player 0
 

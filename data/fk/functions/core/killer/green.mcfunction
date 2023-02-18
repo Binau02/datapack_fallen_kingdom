@@ -1,5 +1,5 @@
 scoreboard players set team_killer team_kill 8
-tellraw @a[team=green] [{"text":"||","obfuscated":true,"color":"gold"},{"text":" En récompense de votre assaut, un nouveau joueur a rejoint votre équipe ! ","obfuscated":false,"color":"white"},{"text":"||","obfuscated":true,"color":"gold"}]
+tellraw @a[team=green] [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"||","obfuscated":true,"color":"gold"},{"text":" En récompense de votre assaut, un nouveau joueur a rejoint votre équipe ! ","obfuscated":false,"color":"white"},{"text":"||","obfuscated":true,"color":"gold"}]
 
 execute if entity @e[type=end_crystal,tag=red_core,sort=nearest,limit=1,distance=..40] run function fk:core/eliminated/red
 execute if entity @e[type=end_crystal,tag=blue_core,sort=nearest,limit=1,distance=..40] run function fk:core/eliminated/blue
