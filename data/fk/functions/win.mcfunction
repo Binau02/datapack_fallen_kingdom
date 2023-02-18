@@ -37,4 +37,8 @@ function fk:win_effect2
 schedule function fk:stop_win_effect 20s
 
 
+kill @e[type=slime,type=end_crystal]
+
+
+
 
