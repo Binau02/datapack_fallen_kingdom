@@ -1,12 +1,13 @@
 schedule clear fk:schedule_10t
-spreadplayers 0 0 0 20 false @a
+execute in fk:world run spreadplayers 0 0 0 20 false @a
+execute in fk:world run spawnpoint @a 0 0 0
 gamemode adventure @a
 effect give @a resistance 100000 100 true
 effect give @a[tag=WINNER] glowing 1000000 1 true
 effect give @a saturation 1000000 200 true
 clear @a
 give @a stick{Enchantments:[{id:"knockback",lvl:5}]} 64
-
+title @a times 0 100 40
 execute if entity @a[tag=WINNER,team=red] run tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"The","color":"white","bold":true},{"text":" RED ","color":"red","bold":true},{"text":"team won the game!","color":"white","bold":true}]
 execute if entity @a[tag=WINNER,team=red] run title @a title [{"text":"RED","color":"red","bold":true},{"text":" team won !","color":"white","bold":false}]
 
