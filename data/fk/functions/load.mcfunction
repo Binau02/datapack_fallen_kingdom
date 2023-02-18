@@ -7,6 +7,7 @@
 
 function fk:load_spawner
 function fk:load_register
+function fk:teams/load_teams
 function fk:capture/capture_load
 
 
