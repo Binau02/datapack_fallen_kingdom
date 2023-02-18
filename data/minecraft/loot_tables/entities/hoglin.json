@@ -1,0 +1,41 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cooked_porkchop",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": {
+                    "type": "minecraft:binomial",
+                    "n": 4,
+                    "p": 0.5
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:empty",
+            "weight": 80
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 20,
+            "name": "minecraft:apple"
+          }
+        ]
+      }
+    ]
+  }
+  

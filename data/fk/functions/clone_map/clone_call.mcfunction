@@ -1,6 +1,7 @@
 execute if score clone_timer clone matches 0 run function fk:clone_map/clone_parameters
 
 execute if score clone_timer clone matches 0 run tellraw @a [{"text":"[","color":"white"},{"text":"CLONE","color":"green"},{"text":"] ","color":"white"},{"text":"CLONING THE MAP !\n ","color":"red"},{"text":"THIS MAY CAUSES SOME LAGS !","bold":true,"underlined":true,"color":"dark_red"}]
+execute if score clone_timer clone matches 0 run tellraw @a ["",{"text":"["},{"text":"CLONE","color":"green"},{"text":"] >>> "},{"text":"Click ","color":"yellow"},{"text":"here","underlined":true,"color":"red","clickEvent":{"action":"run_command","value":"/function fk:clone_map/clone_emergency"}},{"text":" ","color":"yellow","clickEvent":{"action":"run_command","value":"/function fk:clone/clone_emergency"}},{"text":"to cancel map clone !","color":"yellow"},{"text":" <<<"}]
 
 execute if score clone_timer clone matches 0 run tellraw @a [{"text":"[","color":"white"},{"text":"CLONE","color":"green"},{"text":"] ","color":"white"},{"text":"5","color":"yellow"}]
 execute if score clone_timer clone matches 1 run tellraw @a [{"text":"[","color":"white"},{"text":"CLONE","color":"green"},{"text":"] ","color":"white"},{"text":"4","color":"yellow"}]
