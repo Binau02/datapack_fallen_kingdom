@@ -17,3 +17,5 @@ execute if entity @e[type=marker,tag=join_green,distance=..2,limit=1] run team j
 execute if entity @e[type=marker,tag=join_pink,distance=..2,limit=1] run team join pink
 
 execute if entity @e[type=marker,tag=leave_team,distance=..2,limit=1] run team leave @s
+
+advancement revoke @s only fk:join_team
