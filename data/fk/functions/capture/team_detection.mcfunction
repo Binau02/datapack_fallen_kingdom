@@ -1,12 +1,3 @@
-#for each team which are red,blue,yellow,black,white,pink,purple,green
-#execute as @e[type=marker,tag=cap_point_1,team=!red] if entity @a[distance=..10,team=red] run team leave @s
-#execute as @e[type=marker,tag=cap_point_1,team=!blue] if entity @a[distance=..10,team=blue] run team leave @s
-#execute as @e[type=marker,tag=cap_point_1,team=!yellow] if entity @a[distance=..10,team=yellow] run team leave @s
-#execute as @e[type=marker,tag=cap_point_1,team=!black] if entity @a[distance=..10,team=black] run team leave @s
-#execute as @e[type=marker,tag=cap_point_1,team=!white] if entity @a[distance=..10,team=white] run team leave @s
-#execute as @e[type=marker,tag=cap_point_1,team=!pink] if entity @a[distance=..10,team=pink] run team leave @s
-#execute as @e[type=marker,tag=cap_point_1,team=!purple] if entity @a[distance=..10,team=purple] run team leave @s
-#execute as @e[type=marker,tag=cap_point_1,team=!green] if entity @a[distance=..10,team=green] run team leave @s
 
 execute run scoreboard players set @s team_capturing 0
 execute if entity @a[distance=..5,team=red] run scoreboard players add @s team_capturing 1
