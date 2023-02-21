@@ -6,4 +6,4 @@
 ##
 
 team join purple
-tellraw @s ["",{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"You have joined the purple team"}]
+tellraw @s ["",{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"You have joined the "},{"text":"purple","color":"purple"},{"text":" team"}]
