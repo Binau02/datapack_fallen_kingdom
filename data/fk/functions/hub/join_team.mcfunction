@@ -15,3 +15,5 @@ execute if entity @s[team=!blue] if entity @e[type=marker,tag=join_blue,distance
 execute if entity @s[team=!white] if entity @e[type=marker,tag=join_white,distance=..2,limit=1] run function fk:hub/join_teams/join_white
 execute if entity @s[team=!green] if entity @e[type=marker,tag=join_green,distance=..2,limit=1] run function fk:hub/join_teams/join_green
 execute if entity @s[team=!pink] if entity @e[type=marker,tag=join_pink,distance=..2,limit=1] run function fk:hub/join_teams/join_pink
+
+execute if entity @s[team=] if entity @e[type=marker,tag=leave,distance=..3,limit=1] run function fk:hub/join_teams/leave
