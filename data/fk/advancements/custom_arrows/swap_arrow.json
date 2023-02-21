@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "shot_arrow": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "damage": {
+            "type": {
+              "is_projectile": true,
+              "direct_entity": {
+                "type": "#minecraft:arrows",
+                "nbt": "{Tags:[\"swap_arrow\"]}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "fk:arrows/swap_arrow1"
+    }
+  }
+  

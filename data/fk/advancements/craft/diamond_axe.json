@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "recipe_unlocked",
+			"conditions": {
+				"recipe": "diamond_axe"
+			}
+		}
+	},
+	"rewards": {
+		"function": "fk:craft/diamond_axe"
+	}
+}

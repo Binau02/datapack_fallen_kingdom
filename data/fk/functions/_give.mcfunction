@@ -3,6 +3,9 @@ loot give @s loot fk:i/molotov
 loot give @s loot fk:i/ender_gas
 loot give @s loot fk:i/smoke
 loot give @s loot fk:i/cage
+loot give @s loot fk:i/aswap
+loot give @s loot fk:i/tnt
+
 give @s potion{display:{Name:'[{"text": "Resistance Potion", "italic":false,"color": "blue"}]'},CustomPotionEffects:[{Id:11,Duration:600,Amplifier:0}],CustomPotionColor:1314494}
 give @s potion{display:{Name:'[{"text": "Strenght Potion", "italic":false,"color": "red"}]'},CustomPotionEffects:[{Id:5,Duration:600,Amplifier:0}],CustomPotionColor:15930907}
 give @s potion{display:{Name:'[{"text": "Speed Potion", "italic":false,"color": "aqua"}]'},CustomPotionEffects:[{Id:1,Duration:600,Amplifier:0}],CustomPotionColor:1503731}
