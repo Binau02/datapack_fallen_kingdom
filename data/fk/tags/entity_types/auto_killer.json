@@ -1,0 +1,8 @@
+{
+  "values":[
+    "minecraft:player",
+    "minecraft:marker",
+    "minecraft:item",
+    "minecraft:area_effect_cloud"
+  ]
+}
