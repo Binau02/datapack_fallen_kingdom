@@ -26,8 +26,9 @@ scoreboard objectives remove non_player
 scoreboard objectives remove Kills
 scoreboard objectives remove Deaths
 scoreboard objectives remove clone 
+scoreboard objectives remove swap_arrowHit 
 
-
+scoreboard objectives add swap_arrowHit dummy
 scoreboard objectives add clone dummy
 scoreboard objectives add cage_time dummy
 scoreboard objectives add team_kill dummy
@@ -48,6 +49,7 @@ execute store result score nb_players nb_players if entity @a
 execute store result score nb_spawn nb_spawn if entity @a
 scoreboard players operation @a spawn = nb_spawn nb_spawn
 scoreboard players set clone_timer clone 0
+scoreboard players set max swap_arrowHit 1
 schedule function fk:schedule_10t 10t replace
 # detect_spawn
 function fk:detect_spawn

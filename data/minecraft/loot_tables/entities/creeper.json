@@ -9,14 +9,10 @@
 			"weight": 18
 		  },
 		  {
-			"type": "minecraft:item",
-			"weight": 1,
-			"name": "minecraft:tnt",
+			"type": "minecraft:loot_table",
+			"weight": 1,			
+			"name": "fk:i/tnt",
 			"functions": [
-			  {
-				"function": "minecraft:set_nbt",
-				"tag": "{CanPlaceOn:[\"#fk:all_blocks\"]}"
-			  },
 			  {
 				"function": "minecraft:set_count",
 				"count": {

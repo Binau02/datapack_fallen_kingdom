@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "recipe_unlocked",
+			"conditions": {
+				"recipe": "iron_shovel"
+			}
+		}
+	},
+	"rewards": {
+		"function": "fk:craft/iron_shovel"
+	}
+}
