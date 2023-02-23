@@ -5,6 +5,7 @@
     },
     "title": "fallen kingdom hub",
     "description": "test the games while you wait for players",
+    "background": "minecraft:textures/block/andesite.png",
     "show_toast": false,
     "announce_to_chat": false
   },
