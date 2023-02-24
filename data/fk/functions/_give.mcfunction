@@ -4,6 +4,7 @@ loot give @s loot fk:i/ender_gas
 loot give @s loot fk:i/smoke
 loot give @s loot fk:i/cage
 loot give @s loot fk:i/aswap
+loot give @s loot fk:i/arocket
 loot give @s loot fk:i/tnt
 
 give @s potion{display:{Name:'[{"text": "Resistance Potion", "italic":false,"color": "blue"}]'},CustomPotionEffects:[{Id:11,Duration:600,Amplifier:0}],CustomPotionColor:1314494}
