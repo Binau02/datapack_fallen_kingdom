@@ -2,9 +2,7 @@
 scoreboard objectives remove capture_score
 scoreboard objectives remove team_capturing
 scoreboard objectives remove Coins
-scoreboard objectives remove shelter_time
 
-scoreboard objectives add shelter_time dummy
 scoreboard objectives add capture_score dummy
 scoreboard objectives add team_capturing dummy
 scoreboard objectives add Coins dummy

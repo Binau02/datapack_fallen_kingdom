@@ -30,9 +30,7 @@ scoreboard objectives remove swap_arrowHit
 scoreboard objectives remove rocket_arrow_effect 
 scoreboard objectives remove rocket_arrow_fall
 scoreboard objectives remove freeze_arrow
-scoreboard objectives remove nightmare_arrow
 
-scoreboard objectives add nightmare_arrow dummy
 scoreboard objectives add freeze_arrow dummy
 scoreboard objectives add rocket_arrow_fall dummy
 scoreboard objectives add rocket_arrow_effect dummy
@@ -59,7 +57,6 @@ scoreboard players operation @a spawn = nb_spawn nb_spawn
 scoreboard players set clone_timer clone 0
 scoreboard players set max swap_arrowHit 1
 scoreboard players set max freeze_arrow 1
-scoreboard players set max nightmare_arrow 1
 
 
 
@@ -67,5 +64,11 @@ schedule function fk:schedule_10t 10t replace
 # detect_spawn
 function fk:detect_spawn
 
+
+#reset capture point
+execute at @e[tag=cap_point] run summon marker ~ ~ ~ {Tags:["cap_point2"]}
+kill @e[tag=cap_point]
+execute at @e[tag=cap_point2] run function fk:capture/set_capture_point
+kill @e[tag=cap_point2]
 
 tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"Fallen Kingdom by Binau & Doriantrn LOADED.","color":"gold"}]

@@ -1,0 +1,67 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:arrow",
+					"weight": 21,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"weight": 1,
+					"name": "fk:i/afreeze"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"weight": 1,
+					"name": "fk:i/aswap"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"weight": 1,
+					"name": "fk:i/arocket"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"weight": 1,
+					"name": "fk:i/anightmare"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:empty",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:string",
+					"weight": 5
+				}
+			]
+		}
+	]
+}
