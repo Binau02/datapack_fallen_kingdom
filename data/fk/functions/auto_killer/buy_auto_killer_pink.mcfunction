@@ -5,7 +5,12 @@
  # Created by Binau
 ##
 
+# as the player who clicked the sign / at the sign clicked
+
 scoreboard players set buy spawner_pink 0
+
+execute if entity @s[team=!pink] run scoreboard players set buy spawner_pink 5
+
 
 execute if score auto_killer spawner_pink matches 0 if score buy spawner_pink matches 0 run execute if score pink Coins matches 1000.. run scoreboard players set buy spawner_pink 1
 execute if score auto_killer spawner_pink matches 0 if score buy spawner_pink matches 0 run execute unless score pink Coins matches 1000.. run tellraw @s ["",{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"You don't have enough coins","italic":true,"color":"gray"}]

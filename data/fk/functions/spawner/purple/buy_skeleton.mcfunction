@@ -5,7 +5,12 @@
  # Created by Binau
 ##
 
+# as the player who clicked the sign / at the sign clicked
+
 scoreboard players set buy spawner_purple 0
+
+execute if entity @s[team=!purple] run scoreboard players set buy spawner_purple 5
+
 
 execute if score skeleton spawner_purple matches 0 if score buy spawner_purple matches 0 run execute if score purple Coins matches 80.. run scoreboard players set buy spawner_purple 1
 execute if score skeleton spawner_purple matches 0 if score buy spawner_purple matches 0 run execute unless score purple Coins matches 80.. run tellraw @s ["",{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"You don't have enough coins","italic":true,"color":"gray"}]
