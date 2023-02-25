@@ -11,6 +11,7 @@ kill @e[type=!minecraft:player,type=!minecraft:marker,distance=..6]
 kill @e[type=!minecraft:player,type=!minecraft:marker,distance=..6]
 
 fill ~-8 ~2 ~2 ~-12 ~2 ~2 oak_wall_sign[facing=north]
+setblock ~-10 ~2 ~-2 oak_wall_sign[facing=south]{Text1:'{"text":"Auto-killer","clickEvent":{"action":"run_command","value":"function fk:auto_killer/buy_auto_killer_blue"}}',Text2:'{"text":""}',Text3:'{"text":""}',Text4:'{"text":"2000$"}'}
 function fk:spawner/blue/sign_hoglin_desactivate
 data merge block ~-12 ~2 ~2 {Text1:'{"clickEvent":{"action":"run_command","value":"function fk:spawner/blue/buy_hoglin"},"text":"hoglin"}',Text2:'["",{"text":"lvl "},{"score":{"name":"hoglin","objective":"spawner_blue"}}]'}
 execute if score hoglin spawner_blue matches 0 run data merge block ~-12 ~2 ~2 {Text4:'{"text":"lvl 1 20$"}'}
