@@ -4,6 +4,8 @@
 # as-at: player
 
 
-execute at @e[type=marker,tag=center,limit=1] run tp @s ~ ~ ~
-execute at @e[type=marker,tag=center,limit=1] run spawnpoint @s ~ ~ ~
+# execute at @e[type=marker,tag=center,limit=1] run tp @s ~ ~ ~
+# execute at @e[type=marker,tag=center,limit=1] run spawnpoint @s ~ ~ ~
 tag @s add known
+
+function fk:spawn

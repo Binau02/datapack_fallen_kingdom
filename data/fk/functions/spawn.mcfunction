@@ -11,3 +11,5 @@ execute store result score nb_spawn nb_spawn if entity @a
 scoreboard players operation @a spawn = nb_spawn nb_spawn
 
 say je suis conecté !
+
+# execute in minecraft:overworld at @e[type=marker,tag=hub,limit=1] run tp @s ~ ~ ~
