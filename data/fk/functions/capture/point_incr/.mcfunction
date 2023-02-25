@@ -23,6 +23,9 @@ execute if score $team capture_score matches 7 if entity @s[team=!purple] run sc
 execute if score $team capture_score matches 8 if entity @s[team=!green] run scoreboard players remove @s capture_score 1
 
 
+execute if score $team capture_score matches 3 run say toto
+execute if entity @s[team=yellow] run say youpi
+
 execute if score $team capture_score matches 1 if entity @s[team=red] run scoreboard players add @s capture_score 1
 execute if score $team capture_score matches 2 if entity @s[team=blue] run scoreboard players add @s capture_score 1
 execute if score $team capture_score matches 3 if entity @s[team=yellow] run scoreboard players add @s capture_score 1
