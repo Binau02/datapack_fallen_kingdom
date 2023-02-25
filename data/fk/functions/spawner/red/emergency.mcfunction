@@ -12,7 +12,11 @@ kill @e[type=!minecraft:player,type=!minecraft:marker,distance=..6]
 
 fill ~8 ~2 ~-2 ~12 ~2 ~-2 oak_wall_sign[facing=south]
 setblock ~10 ~2 ~2 air
-setblock ~10 ~2 ~2 oak_wall_sign[facing=north]{Text1:'{"text":"Auto-killer","clickEvent":{"action":"run_command","value":"function fk:auto_killer/buy_auto_killer_red"}}',Text2:'{"text":""}',Text3:'{"text":""}',Text4:'{"text":"2000$"}'}
+execute if score auto_killer spawner_red matches 0 run setblock ~10 ~2 ~2 oak_wall_sign[facing=north]{Text1:'{"text":"auto-killer lvl 0","clickEvent":{"action":"run_command","value":"function fk:auto_killer/buy_auto_killer_red"}}',Text2:'{"text":""}',Text3:'{"text":""}',Text4:'{"text":"lvl 1 1000$"}'}
+execute if score auto_killer spawner_red matches 1 run setblock ~10 ~2 ~2 oak_wall_sign[facing=north]{Text1:'{"text":"auto-killer lvl 1","clickEvent":{"action":"run_command","value":"function fk:auto_killer/buy_auto_killer_red"}}',Text2:'{"text":""}',Text3:'{"text":""}',Text4:'{"text":"lvl 2 2000$"}'}
+execute if score auto_killer spawner_red matches 2 run setblock ~10 ~2 ~2 oak_wall_sign[facing=north]{Text1:'{"text":"auto-killer lvl 2","clickEvent":{"action":"run_command","value":"function fk:auto_killer/buy_auto_killer_red"}}',Text2:'{"text":""}',Text3:'{"text":""}',Text4:'{"text":"lvl 3 4000$"}'}
+execute if score auto_killer spawner_red matches 3 run setblock ~10 ~2 ~2 oak_wall_sign[facing=north]{Text1:'{"text":"auto-killer lvl 3","clickEvent":{"action":"run_command","value":"function fk:auto_killer/buy_auto_killer_red"}}',Text2:'{"text":""}',Text3:'{"text":""}',Text4:'{"text":"lvl 4 8000$"}'}
+execute if score auto_killer spawner_red matches 4 run setblock ~10 ~2 ~2 oak_wall_sign[facing=north]{Text1:'{"text":"auto-killer lvl 4","clickEvent":{"action":"run_command","value":"function fk:auto_killer/buy_auto_killer_red"}}',Text2:'{"text":""}',Text3:'{"text":""}',Text4:'{"text":""}'}
 function fk:spawner/red/sign_hoglin_desactivate
 data merge block ~12 ~2 ~-2 {Text1:'{"clickEvent":{"action":"run_command","value":"function fk:spawner/red/buy_hoglin"},"text":"hoglin"}',Text2:'["",{"text":"lvl "},{"score":{"name":"hoglin","objective":"spawner_red"}}]'}
 execute if score hoglin spawner_red matches 0 run data merge block ~12 ~2 ~-2 {Text4:'{"text":"lvl 1 20$"}'}
