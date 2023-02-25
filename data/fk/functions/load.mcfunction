@@ -30,7 +30,9 @@ scoreboard objectives remove swap_arrowHit
 scoreboard objectives remove rocket_arrow_effect 
 scoreboard objectives remove rocket_arrow_fall
 scoreboard objectives remove freeze_arrow
+scoreboard objectives remove nightmare_arrow
 
+scoreboard objectives add nightmare_arrow dummy
 scoreboard objectives add freeze_arrow dummy
 scoreboard objectives add rocket_arrow_fall dummy
 scoreboard objectives add rocket_arrow_effect dummy
@@ -57,6 +59,7 @@ scoreboard players operation @a spawn = nb_spawn nb_spawn
 scoreboard players set clone_timer clone 0
 scoreboard players set max swap_arrowHit 1
 scoreboard players set max freeze_arrow 1
+scoreboard players set max nightmare_arrow 1
 
 
 
