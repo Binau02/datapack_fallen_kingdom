@@ -29,7 +29,9 @@ scoreboard objectives remove clone
 scoreboard objectives remove swap_arrowHit 
 scoreboard objectives remove rocket_arrow_effect 
 scoreboard objectives remove rocket_arrow_fall
+scoreboard objectives remove freeze_arrow
 
+scoreboard objectives add freeze_arrow dummy
 scoreboard objectives add rocket_arrow_fall dummy
 scoreboard objectives add rocket_arrow_effect dummy
 scoreboard objectives add swap_arrowHit dummy
@@ -54,6 +56,8 @@ execute store result score nb_spawn nb_spawn if entity @a
 scoreboard players operation @a spawn = nb_spawn nb_spawn
 scoreboard players set clone_timer clone 0
 scoreboard players set max swap_arrowHit 1
+scoreboard players set max freeze_arrow 1
+
 
 
 schedule function fk:schedule_10t 10t replace
