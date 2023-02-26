@@ -7,6 +7,6 @@
 
 # as the player who is falling, at the server spawnpoint
 
-#say test
-execute at @s run tp ~ ~20 ~
+say you fall
+#execute at @s run tp ~ ~20 ~
 tag @s remove sumo_player
