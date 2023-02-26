@@ -18,4 +18,4 @@ execute as @a[tag=sumo_player] if score @s sumo matches 240 run advancement gran
 execute as @a[tag=sumo_player] if score @s sumo matches 600 run advancement grant @s only fk:display_hub/black_belt
 
 #execute as @a[x=-100,dx=200,y=0,dy=100,z=-100,dz=200] run say test
-execute as @a[x=300,dx=200,y=0,dy=76,z=1100,dz=200] run say test
+execute as @a[x=300,dx=200,y=0,dy=73,z=1100,dz=200] run say test
