@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:[I;1555168227,1751073260,-1143541368,-1106390802],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNhMjE0N2M3ZWY3NzJmOWNjNDBiMzAxNTEyY2JkNGZiMzdiNWE2ODg1ZGQ1ZmUyNDU0OTM2MjU4NGRkYTQ2NyJ9fX0=\"}]}}}"
+    },
+    "title": "Brown belt",
+    "description": "You have survived on the ring for 2 minutes !! You will become a master soon !",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "fk:display_hub/blue_belt",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

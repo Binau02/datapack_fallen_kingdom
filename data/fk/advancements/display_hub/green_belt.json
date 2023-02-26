@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:[I;-470475314,735529451,-2029317185,884089106],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjcyMDNkMmYwOGE3ZDJiN2M5NTUzMjg2NWViMmI1OTNlNTI2ZGRiOTJmZDVjY2E5ZTdkN2I2MjJiYzUzOTkwNiJ9fX0=\"}]}}}"
+    },
+    "title": "Green belt",
+    "description": "You have survived on the ring for 30 seconds. Let's continue training !",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "fk:display_hub/yellow_belt",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
