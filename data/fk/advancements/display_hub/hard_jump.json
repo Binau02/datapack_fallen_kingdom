@@ -7,7 +7,8 @@
     "description": "You achieved the hard jump. Everybody on this server should respect you.",
     "frame": "challenge",
     "show_toast": true,
-    "announce_to_chat": true
+    "announce_to_chat": true,
+    "hidden": false
   },
   "parent": "fk:display_hub/medium_jump",
   "criteria": {
