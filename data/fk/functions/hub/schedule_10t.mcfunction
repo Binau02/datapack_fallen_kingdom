@@ -5,7 +5,14 @@
  # Created by Binau
 ##
 
-#execute as @a[advancements={fk:display_hub/hard_jump=true}] at @s run particle minecraft:dust 1 1 1 1 ~ ~ ~ 0.2 0.3 0.2 1 10
-#execute as @a[advancements={fk:display_hub/hard_jump=true}] at @s run particle minecraft:scrape ~ ~0.5 ~ 0.1 0.1 0.1 0 1
-
 schedule function fk:hub/schedule_10t 10t
+
+execute store success score n sumo if entity @a[tag=sumo_player]
+scoreboard players remove n sumo 1
+execute as @a[tag=sumo_player] run scoreboard players operation @s sumo += n sumo
+
+execute as @a[tag=sumo_player] if score @s sumo matches 20 run advancement grant @s only fk:display_hub/yellow_belt
+execute as @a[tag=sumo_player] if score @s sumo matches 60 run advancement grant @s only fk:display_hub/green_belt
+execute as @a[tag=sumo_player] if score @s sumo matches 120 run advancement grant @s only fk:display_hub/blue_belt
+execute as @a[tag=sumo_player] if score @s sumo matches 240 run advancement grant @s only fk:display_hub/brown_belt
+execute as @a[tag=sumo_player] if score @s sumo matches 600 run advancement grant @s only fk:display_hub/black_belt
