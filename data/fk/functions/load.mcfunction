@@ -60,10 +60,13 @@ scoreboard players set max swap_arrowHit 1
 scoreboard players set max freeze_arrow 1
 
 
+# mis dans start game
+# schedule function fk:schedule_10t 10t replace
+schedule clear fk:schedule_10t
 
-schedule function fk:schedule_10t 10t replace
 # detect_spawn
 function fk:detect_spawn
+scoreboard players set game_started non_player 0
 
 
 #reset capture point
