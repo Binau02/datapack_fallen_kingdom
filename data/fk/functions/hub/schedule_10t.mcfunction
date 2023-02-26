@@ -7,7 +7,7 @@
 
 schedule function fk:hub/schedule_10t 10t
 
-execute store success score n sumo if entity @a[tag=sumo_player]
+execute at @e[type=marker,tag=sumo,limit=1] store success score n sumo if entity @a[tag=sumo_player,distance=..8]
 scoreboard players remove n sumo 1
 execute as @a[tag=sumo_player] run scoreboard players operation @s sumo += n sumo
 
