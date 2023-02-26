@@ -18,6 +18,3 @@ execute as @a[team=blue] if score @s emergency matches 1 run execute as @e[type=
 execute as @a[team=white] if score @s emergency matches 1 run execute as @e[type=marker,tag=spawner_white,limit=1] at @s run function fk:spawner/white/emergency
 execute as @a[team=lime] if score @s emergency matches 1 run execute as @e[type=marker,tag=spawner_lime,limit=1] at @s run function fk:spawner/lime/emergency
 
-execute as @a if score @s diamond_pickaxe_craft matches 1 run function fk:craft/diamond_pickaxe
-execute as @a if score @s diamond_axe_craft matches 1 run function fk:craft/diamond_axe
-

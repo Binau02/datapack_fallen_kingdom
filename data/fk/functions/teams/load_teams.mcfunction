@@ -6,7 +6,7 @@ team modify red friendlyFire false
 
 team remove blue
 team add blue
-team modify blue color blue
+team modify blue color aqua
 team modify blue seeFriendlyInvisibles false
 team modify blue friendlyFire false
 
