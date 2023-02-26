@@ -10,5 +10,6 @@
 execute if entity @e[type=marker,tag=end_easy,distance=..10,limit=1] run advancement grant @s only fk:display_hub/easy_jump
 execute if entity @e[type=marker,tag=end_medium,distance=..10,limit=1] run advancement grant @s only fk:display_hub/medium_jump
 execute if entity @e[type=marker,tag=end_hard,distance=..10,limit=1] run advancement grant @s only fk:display_hub/hard_jump
+execute if entity @e[type=marker,tag=end_hard,distance=..10,limit=1] run effect give @s glowing 999999 1 true
 
 advancement revoke @s only fk:end_jump
