@@ -5,7 +5,7 @@
       "nbt": "{SkullOwner:{Id:[I;-305342305,-1957868220,-2014561034,1437580055],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzJkMmUzZmNmMGUzOTAzN2VhZjIyMzg0ZGFiM2YwODUyMmE2Yjg5MWQyN2E0N2I3NTI3OTE2ZWE4MWFkZDNjNSJ9fX0=\"}]}}}"
     },
     "title": "White belt",
-    "description": "You are a SUMO beginner as you survived against someone. Continue training !",
+    "description": "You are a SUMO beginner and you discover the ring. Continue training !",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true
