@@ -5,4 +5,6 @@
  # Created by Binau
 ##
 
-clear @s glass_bottle
+schedule function fk:custom_potions/clear_glass_bottle_schedule 1t
+
+advancement revoke @s only fk:consume_item
