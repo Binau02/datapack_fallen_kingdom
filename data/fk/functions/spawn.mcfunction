@@ -12,6 +12,8 @@ scoreboard players operation @a spawn = nb_spawn nb_spawn
 
 say je suis conecté !
 
+tag @s remove sumo_player
+
 # execute in minecraft:overworld at @e[type=marker,tag=hub,limit=1] run tp @s ~ ~ ~
 
 execute if score game_started non_player matches 0 run attribute @s generic.attack_damage base set 0
