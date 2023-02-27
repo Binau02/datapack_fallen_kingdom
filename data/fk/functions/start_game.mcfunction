@@ -16,7 +16,7 @@ execute as @a[tag=player] run effect clear @s
 
 schedule clear fk:hub/schedule_10t
 schedule clear fk:hub/schedule_2t
-
+function fk:start_team_detection
 execute as @a[team=red] run tp @s @e[type=marker,tag=red,limit=1]
 execute as @a[team=purple] run tp @s @e[type=marker,tag=purple,limit=1]
 execute as @a[team=black] run tp @s @e[type=marker,tag=black,limit=1]
