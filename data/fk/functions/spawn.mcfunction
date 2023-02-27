@@ -11,6 +11,7 @@ execute store result score nb_spawn nb_spawn if entity @a
 scoreboard players operation @a spawn = nb_spawn nb_spawn
 
 # say je suis connecté !
+tellraw @s {"text":"retourne taffer ta FHS !"}
 scoreboard players reset @s swap_arrowHit 
 scoreboard players reset @s rocket_arrow_effect 
 scoreboard players reset @s rocket_arrow_fall
