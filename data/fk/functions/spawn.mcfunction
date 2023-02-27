@@ -10,7 +10,7 @@
 execute store result score nb_spawn nb_spawn if entity @a
 scoreboard players operation @a spawn = nb_spawn nb_spawn
 
-say je suis conecté !
+# say je suis connecté !
 scoreboard players reset @s swap_arrowHit 
 scoreboard players reset @s rocket_arrow_effect 
 scoreboard players reset @s rocket_arrow_fall
