@@ -46,4 +46,8 @@ team modify green color green
 team modify green seeFriendlyInvisibles false
 team modify green friendlyFire false
 
-
+team remove spectator
+team add spectator
+team modify spectator color gray
+team modify spectator seeFriendlyInvisibles false
+team modify spectator friendlyFire false

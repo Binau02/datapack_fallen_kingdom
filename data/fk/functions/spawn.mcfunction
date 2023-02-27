@@ -23,6 +23,10 @@ execute if score game_started non_player matches 0 run spawnpoint @s 0 111 0
 
 execute if score game_started non_player matches 1 unless entity @s[team=] run team join spectator
 execute if score game_started non_player matches 1 if entity @s[team=!spectator] run attribute @s generic.attack_damage base set 1.0
+execute if score game_started non_player matches 1 if entity @s[team=!spectator] run attribute @s generic.armor base set 0.0
+execute if score game_started non_player matches 1 if entity @s[team=!spectator] run attribute @s generic.knockback_resistance base set 0.0
+execute if score game_started non_player matches 1 if entity @s[team=!spectator] run attribute @s generic.movement_speed base set 0.1
+
 execute if score game_started non_player matches 1 if entity @s[team=spectator] run gamemode spectator
 execute if score game_started non_player matches 1 if entity @s[team=spectator] run execute in fk:world run tp 0 80 0
 execute if score game_started non_player matches 1 run effect clear @s
