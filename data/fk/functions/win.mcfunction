@@ -3,7 +3,7 @@ execute in fk:world run spreadplayers 0 0 0 20 false @a
 execute in fk:world run spawnpoint @a 0 0 0
 gamemode adventure @a
 effect give @a resistance 100000 100 true
-effect give @a[tag=WINNER] glowing 1000000 1 true
+effect give @a[tag=WINNER] glowing 20 1 true
 effect give @a saturation 1000000 200 true
 clear @a
 give @a stick{Enchantments:[{id:"knockback",lvl:5}]} 64
@@ -38,7 +38,8 @@ function fk:win_effect2
 schedule function fk:stop_win_effect 20s
 
 
-kill @e[type=slime,type=end_crystal]
+kill @e[type=slime]
+kill @e[type=end_crystal]
 
 
 
