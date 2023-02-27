@@ -14,4 +14,6 @@ team join spec @a[team=blue]
 
 tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"The","color":"gray","bold":false},{"text":" blue ","color":"blue","bold":true},{"text":"team has been eliminated !","color":"gray","bold":false}]
 scoreboard players set blue_alive non_player 0
+scoreboard players set @e[type=armor_stand,tag=cap_point,team=blue] capture_score 0
 
+team remove blue
