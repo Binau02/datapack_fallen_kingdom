@@ -19,8 +19,9 @@ execute if score game_started non_player matches 0 run gamemode adventure
 execute if score game_started non_player matches 0 at @e[type=marker,tag=hub,limit=1] run tp ~ ~ ~
 execute if score game_started non_player matches 0 run effect give @s resistance 999999 255 true
 execute if score game_started non_player matches 0 run effect give @s saturation 999999 255 true
+execute if score game_started non_player matches 0 run spawnpoint @s 0 111 0
 
-execute if score game_started non_player matches 1 if entity @s[tag=player] run attribute @s generic.attack_damage base set 1.0
-execute if score game_started non_player matches 1 unless entity @s[tag=player] run gamemode spectator
-execute if score game_started non_player matches 1 unless entity @s[tag=player] run execute in fk:world run tp 0 80 0
+execute if score game_started non_player matches 1 if entity @s[team=!spectator] run attribute @s generic.attack_damage base set 1.0
+execute if score game_started non_player matches 1 unless entity @s[team=!spectator] run gamemode spectator
+execute if score game_started non_player matches 1 unless entity @s[team=!spectator] run execute in fk:world run tp 0 80 0
 execute if score game_started non_player matches 1 run effect clear @s
