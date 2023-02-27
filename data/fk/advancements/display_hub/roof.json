@@ -5,7 +5,7 @@
     },
     "title": "On the roof !",
     "description": "You found the way to go there... Clever child ^^",
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
