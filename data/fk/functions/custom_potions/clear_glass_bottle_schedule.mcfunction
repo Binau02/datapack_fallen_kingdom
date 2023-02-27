@@ -5,4 +5,6 @@
  # Created by Binau
 ##
 
-clear @s glass_bottle
+execute as @a[advancements={fk:consume_item=true}] run clear @s glass_bottle
+
+advancement revoke @s only fk:consume_item
