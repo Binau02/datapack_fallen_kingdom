@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:light",
+        "state": {
+          "level": "4"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fk:hub/try_hard_jump"
+  }
+}

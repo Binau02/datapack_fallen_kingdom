@@ -16,6 +16,8 @@ scoreboard players reset @s rocket_arrow_effect
 scoreboard players reset @s rocket_arrow_fall
 scoreboard players reset @s freeze_arrow
 tag @s remove sumo_player
+scoreboard players set @s try 0
+advancement revoke @s only fk:try_hard_jump
 attribute @s generic.armor base set 0.0
 attribute @s generic.knockback_resistance base set 0.0
 attribute @s generic.movement_speed base set 0.1

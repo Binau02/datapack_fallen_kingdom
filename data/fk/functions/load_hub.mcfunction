@@ -7,6 +7,10 @@
 
 scoreboard objectives remove sumo
 scoreboard objectives add sumo dummy
+scoreboard objectives remove try
+scoreboard objectives add try dummy
+
+scoreboard players set @a try 0
 
 team remove hub
 team add hub
