@@ -10,6 +10,8 @@ execute as @e[type=area_effect_cloud] at @s run function fk:custom_potions/
 
 function fk:team_alive_test
 
+execute at @e[type=marker,tag=ressource,sort=random,limit=4] run setblock ~ ~ ~ sea_lantern
+
 execute as @a[team=pink] if score @s emergency matches 1 run execute as @e[type=marker,tag=spawner_pink,limit=1] at @s run function fk:spawner/pink/emergency
 execute as @a[team=red] if score @s emergency matches 1 run execute as @e[type=marker,tag=spawner_red,limit=1] at @s run function fk:spawner/red/emergency
 execute as @a[team=purple] if score @s emergency matches 1 run execute as @e[type=marker,tag=spawner_purple,limit=1] at @s run function fk:spawner/purple/emergency
