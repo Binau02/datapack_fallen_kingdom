@@ -21,7 +21,7 @@ execute if score game_started non_player matches 0 run effect give @s resistance
 execute if score game_started non_player matches 0 run effect give @s saturation 999999 255 true
 execute if score game_started non_player matches 0 run spawnpoint @s 0 111 0
 
-execute if score game_started non_player matches 1 unless entity @s[team=] run team join spectator
+execute if score game_started non_player matches 1 if entity @s[team=] run team join spectator
 execute if score game_started non_player matches 1 if entity @s[team=!spectator] run attribute @s generic.attack_damage base set 1.0
 execute if score game_started non_player matches 1 if entity @s[team=!spectator] run attribute @s generic.armor base set 0.0
 execute if score game_started non_player matches 1 if entity @s[team=!spectator] run attribute @s generic.knockback_resistance base set 0.0
