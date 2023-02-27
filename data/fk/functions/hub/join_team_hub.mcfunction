@@ -6,3 +6,5 @@
 ##
 
 team join hub
+
+advancement revoke @s only fk:join_team_hub
