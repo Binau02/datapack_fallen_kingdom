@@ -13,6 +13,7 @@ effect give @a[team=yellow] instant_health 10 100 true
 execute as @e[type=end_crystal,tag=yellow_core] at @s run function fk:core/core_death
 execute at @a[team=yellow] run summon lightning_bolt ~ ~-5 ~
 team join spec @a[team=yellow]
+gamemode spectator @a[team=yellow]
 
 tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"The","color":"gray","bold":false},{"text":" yellow ","color":"yellow","bold":true},{"text":"team has been eliminated !","color":"gray","bold":false}]
 scoreboard players set @e[type=armor_stand,tag=cap_point,team=yellow] capture_score 0
