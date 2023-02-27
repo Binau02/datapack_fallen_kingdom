@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:feather"
+    },
+    "title": "On the roof !",
+    "description": "You found the way to go there... Clever child ^^",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "fk:display_hub/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:light",
+        "state": {
+          "level": "3"
+        }
+      }
+    }
+  }
+}
