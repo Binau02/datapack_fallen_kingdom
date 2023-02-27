@@ -60,6 +60,41 @@ scoreboard players set max swap_arrowHit 1
 scoreboard players set max freeze_arrow 1
 
 
+#############
+# gamerules #
+#############
+gamerule announceAdvancements true
+gamerule commandBlockOutput false
+gamerule disableRaids true
+gamerule doDaylightCycle false
+gamerule doEntityDrops false
+gamerule doFireTick true
+gamerule doImmediateRespawn true
+gamerule doInsomnia false
+gamerule doLimitedCrafting false
+gamerule doMobLoot true
+gamerule doMobSpawning false
+gamerule doPatrolSpawning false
+gamerule doTileDrops true
+gamerule doTraderSpawning false
+gamerule doWeatherCycle false
+gamerule drowningDamage true
+gamerule fallDamage true
+gamerule fireDamage true
+gamerule keepInventory false
+gamerule logAdminCommands true
+gamerule mobGriefing false
+gamerule naturalRegeneration true
+gamerule playersSleepingPercentage 101
+gamerule randomTickSpeed 3
+gamerule showDeathMessages true
+gamerule spawnRadius 10
+gamerule spectatorsGenerateChunks false
+
+weather clear
+time set 12000
+
+
 # mis dans start game
 # schedule function fk:schedule_10t 10t replace
 schedule clear fk:schedule_10t
