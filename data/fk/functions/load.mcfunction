@@ -32,7 +32,9 @@ scoreboard objectives remove rocket_arrow_effect
 scoreboard objectives remove rocket_arrow_fall
 scoreboard objectives remove freeze_arrow
 scoreboard objectives remove temp_death
+scoreboard objectives remove displayscore
 
+scoreboard objectives add displayscore dummy [{"text":"[","color":"white"},{"text":"Fallen Kingdom","color":"gold"},{"text":"]","color":"white"}]
 scoreboard objectives add temp_death deathCount
 scoreboard objectives add freeze_arrow dummy
 scoreboard objectives add rocket_arrow_fall dummy
