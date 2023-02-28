@@ -1,0 +1,17 @@
+{
+    "values": [   
+        "dirt",
+        "coarse_dirt",
+        "podzol",
+        "mycelium",
+        "jack_o_lantern",
+        "lily_pad",
+        "rooted_dirt",
+        "grass",
+        "grass_block",
+        "#flowers",
+        "dark_oak_wood",
+        "cobblestone",
+        "sea_lantern"
+    ]
+}

@@ -3,6 +3,6 @@
 
 # as-at: player
 clear @s knowledge_book
-give @s diamond_axe{CanDestroy:["#fk:je_sais_pas"]}
+give @s diamond_axe{CanDestroy:["#fk:breakable"]}
 advancement revoke @s only fk:craft/diamond_axe
 recipe take @s diamond_axe

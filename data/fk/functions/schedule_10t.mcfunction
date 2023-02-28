@@ -21,3 +21,5 @@ execute as @a[team=blue] if score @s emergency matches 1 run execute as @e[type=
 execute as @a[team=white] if score @s emergency matches 1 run execute as @e[type=marker,tag=spawner_white,limit=1] at @s run function fk:spawner/white/emergency
 execute as @a[team=lime] if score @s emergency matches 1 run execute as @e[type=marker,tag=spawner_lime,limit=1] at @s run function fk:spawner/lime/emergency
 
+execute as @a[scores={temp_death=1..}] run function fk:spawn_stuff
+execute as @a[scores={temp_death=1..}] run scoreboard players remove @s temp_death 1
