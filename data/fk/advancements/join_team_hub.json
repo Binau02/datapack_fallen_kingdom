@@ -5,7 +5,7 @@
       "conditions": {
         "block": "minecraft:light",
         "state": {
-          "level": "0"
+          "level": "2"
         }
       }
     }
