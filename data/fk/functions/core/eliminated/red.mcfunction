@@ -20,3 +20,6 @@ scoreboard players set @e[type=armor_stand,tag=cap_point,team=red] capture_score
 team remove red
 
 
+function fk:spawner/red/sign_hoglin_activate
+function fk:spawner/red/sign_hoglin_desactivate
+schedule clear fk:auto_killer/auto_killer_red

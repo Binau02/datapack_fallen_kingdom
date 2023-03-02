@@ -19,3 +19,7 @@ tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"]
 scoreboard players set @e[type=armor_stand,tag=cap_point,team=blue] capture_score 0
 
 team remove blue
+
+function fk:spawner/blue/sign_hoglin_activate
+function fk:spawner/blue/sign_hoglin_desactivate
+schedule clear fk:auto_killer/auto_killer_blue
