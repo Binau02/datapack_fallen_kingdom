@@ -11,4 +11,12 @@ scoreboard objectives add Coins dummy
 
 scoreboard players set @e[type=armor_stand,tag=cap_point] capture_score 0
 
+scoreboard players set green Coins 0
+scoreboard players set blue Coins 0
+scoreboard players set red Coins 0
+scoreboard players set yellow Coins 0
+scoreboard players set white Coins 0
+scoreboard players set black Coins 0
+scoreboard players set purple Coins 0
+scoreboard players set pink Coins 0
 

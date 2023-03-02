@@ -8,7 +8,7 @@
 scoreboard players set game_started non_player 1
 
 schedule function fk:schedule_10t 10t replace
-
+schedule function fk:core/set_cores 900s
 execute as @a[team=!] run tag @s add player
 
 execute as @a[tag=player] run attribute @s generic.attack_damage base set 1.0
@@ -27,3 +27,7 @@ execute as @a[team=white] at @e[type=marker,tag=white,limit=1] run function fk:s
 execute as @a[team=green] at @e[type=marker,tag=green,limit=1] run function fk:start/start_green
 execute as @a[team=pink] at @e[type=marker,tag=pink,limit=1] run function fk:start/start_pink
 
+scoreboard players set Seconds non_player 0
+scoreboard players set Minutes non_player 0
+
+function fk:actionbar

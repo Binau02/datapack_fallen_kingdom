@@ -19,4 +19,4 @@ execute if entity @s[team=purple] if entity @e[type=end_crystal,tag=purple_core,
 execute if entity @s[team=green] if entity @e[type=end_crystal,tag=green_core,sort=nearest,limit=1,distance=..40] run function fk:core/killer/_undetermined
 
 
-playsound minecraft:entity.wither.death master @a ~ ~ ~ 1 1
+execute at @a run playsound minecraft:entity.wither.death master @a ~ ~ ~ 1 1

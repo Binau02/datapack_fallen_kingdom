@@ -1,4 +1,6 @@
 #as - at marker of each team middle of base 
+execute at @a run playsound entity.player.levelup master @a ~ ~ ~ 2 0 
+tellraw @a [{"text":"Assault ","color":"red","bold": true},{"text":"enabled. Protect your ","color":"white"},{"text":"core","color":"purple","bold":true},{"text":" at all cost.","color":"white"}]
 
 execute if score pink_alive non_player matches 1 as @e[type=marker,tag=pink] at @s run summon minecraft:slime ~ ~ ~ {Size:4,CustomName:'[{"text":"Pink Core","color":"light_purple","bold":true}]',CustomNameVisible:1b,Health:1000,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,Tags:["core_slime","pink_slime"],ActiveEffects:[{Id:14,Duration:1000000,Amplifier:1,ShowParticles:0b}],Attributes:[{Name:"generic.max_health",Base:1000d}],ArmorItems:[{},{},{},{id:"pumpkin",tag:{Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:255},{id:"projectile_protection",lvl:255},{id:"projectile_protection",lvl:255},{id:"fire_protection",lvl:255}]},Count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 execute if score pink_alive non_player matches 1 as @e[type=marker,tag=pink] at @s run summon minecraft:end_crystal ~ ~ ~ {Invulnerable:1b,Silent:1b,Tags:["core","pink_core"]}

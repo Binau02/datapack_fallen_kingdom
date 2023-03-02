@@ -24,4 +24,5 @@ execute as @a[team=green] if score @s emergency matches 1 run execute as @e[type
 execute as @a[scores={temp_death=1..}] run function fk:spawn_stuff
 execute as @a[scores={temp_death=1..}] run scoreboard players remove @s temp_death 1
 
-execute as @e[type=marker] run function fk:set_gamemode
+execute as @e[type=marker,tag=base] run function fk:set_gamemode
+
