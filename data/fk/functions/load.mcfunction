@@ -113,5 +113,9 @@ execute at @e[tag=cap_point] run summon marker ~ ~ ~ {Tags:["cap_point2"]}
 kill @e[tag=cap_point]
 execute at @e[tag=cap_point2] run function fk:capture/set_capture_point
 kill @e[tag=cap_point2]
+#remove cores
+kill @e[tag=core_name]
+kill @e[tag=core_slime]
+kill @e[tag=core]
 
 tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"Fallen Kingdom by Binau & Doriantrn LOADED.","color":"gold"}]

@@ -4,7 +4,7 @@
  #
  # Created by Binau
 ##
-
+scoreboard players set assault non_player 0
 scoreboard players set game_started non_player 1
 
 schedule function fk:schedule_10t 10t replace
@@ -13,7 +13,7 @@ execute as @a[team=!] run tag @s add player
 
 execute as @a[tag=player] run attribute @s generic.attack_damage base set 1.0
 execute as @a[tag=player] run effect clear @s
-
+execute as @a run function fk:craft/revoke_all
 schedule clear fk:hub/schedule_10t
 schedule clear fk:hub/schedule_2t
 function fk:start_team_detection

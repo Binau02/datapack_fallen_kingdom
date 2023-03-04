@@ -1,3 +1,3 @@
-give @s wooden_sword
-give @s wooden_pickaxe{CanDestroy:["#fk:breakable"]}
-give @s wooden_axe{CanDestroy:["#fk:breakable"]}
+give @s stone_sword{CanDestroy:["#fk:breakable"],HideFlags:8,Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;2012676041,-614904994,-1493839221,-1087551145],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:1.6,Operation:0,UUID:[I;1730154471,289425567,-2081729194,-1153316772],Slot:"mainhand"}]} 
+give @s stone_pickaxe{CanDestroy:["#fk:breakable"],HideFlags:8,Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:3,Operation:0,UUID:[I;2012676041,-614904994,-1493839221,-1087551145],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:1,Operation:0,UUID:[I;1730154471,289425567,-2081729194,-1153316772],Slot:"mainhand"}]}
+give @s stone_axe{CanDestroy:["#fk:breakable"],HideFlags:8,Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:3,Operation:0,UUID:[I;2012676041,-614904994,-1493839221,-1087551145],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:1,Operation:0,UUID:[I;1730154471,289425567,-2081729194,-1153316772],Slot:"mainhand"}]}

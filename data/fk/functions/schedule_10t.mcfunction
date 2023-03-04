@@ -1,6 +1,6 @@
 
 schedule function fk:schedule_10t 10t
-
+function fk:bossbar/bossbar_value_update
 
 scoreboard players add @e[type=marker,tag=Cage] cage_time 1
 execute as @e[type=marker,tag=Cage] if score @s cage_time matches 20.. run function fk:custom_potions/cage_remove

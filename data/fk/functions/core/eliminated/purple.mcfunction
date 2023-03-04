@@ -14,7 +14,7 @@ execute as @e[type=end_crystal,tag=purple_core] at @s run function fk:core/core_
 execute at @a[team=purple] run summon lightning_bolt ~ ~-5 ~
 team join spec @a[team=purple]
 gamemode spectator @a[team=purple]
-
+bossbar remove purple_core_bar
 tellraw @a [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text":"The","color":"gray","bold":false},{"text":" purple ","color":"dark_purple","bold":true},{"text":"team has been eliminated !","color":"gray","bold":false}]
 scoreboard players set @e[type=armor_stand,tag=cap_point,team=purple] capture_score 0
 
