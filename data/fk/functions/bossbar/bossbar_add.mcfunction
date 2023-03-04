@@ -16,6 +16,15 @@ bossbar add purple_core_bar {"text":"Purple Core","color":"purple","bold":true,"
 bossbar add white_core_bar {"text":"White Core","color":"white","bold":true,"style":"progress","visible":"true"}
 bossbar add black_core_bar {"text":"Black Core","color":"black","bold":true,"style":"progress","visible":"true"}
 
+bossbar set red_core_bar color red
+bossbar set blue_core_bar color blue
+bossbar set yellow_core_bar color yellow
+bossbar set green_core_bar color green
+bossbar set pink_core_bar color pink
+bossbar set purple_core_bar color purple
+bossbar set white_core_bar color white
+bossbar set black_core_bar color white
+
 execute as @e[tag=blue_slime,limit=1] store result bossbar blue_core_bar max run data get entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base
 execute as @e[tag=red_slime,limit=1] store result bossbar red_core_bar max run data get entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base
 execute as @e[tag=green_slime,limit=1] store result bossbar green_core_bar max run data get entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base
