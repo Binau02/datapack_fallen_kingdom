@@ -3,6 +3,6 @@
 
 # as-at: player
 clear @s knowledge_book 
-give @s diamond_shovel{CanDestroy:["#fk:breakable"]}
+give @s diamond_shovel{HideFlags:8,CanDestroy:["#fk:breakable"]}
 advancement revoke @s only fk:craft/diamond_shovel
 recipe take @s diamond_shovel

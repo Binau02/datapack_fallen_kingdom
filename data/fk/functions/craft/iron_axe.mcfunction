@@ -3,6 +3,6 @@
 
 # as-at: player
 clear @s knowledge_book 
-give @s iron_axe{CanDestroy:["#fk:breakable"]}
+give @s iron_axe{HideFlags:8,CanDestroy:["#fk:breakable"]}
 advancement revoke @s only fk:craft/iron_axe
 recipe take @s iron_axe

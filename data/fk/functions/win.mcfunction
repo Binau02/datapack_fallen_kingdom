@@ -1,4 +1,5 @@
 schedule clear fk:schedule_10t
+schedule clear fk:actionbar
 execute in fk:world run spreadplayers 0 0 0 20 false @a
 execute in fk:world run spawnpoint @a 0 0 0
 gamemode adventure @a
