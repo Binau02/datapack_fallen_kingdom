@@ -17,6 +17,21 @@ execute if score auto_killer spawner_pink matches 1 run setblock ~2 ~2 ~-10 oak_
 execute if score auto_killer spawner_pink matches 2 run setblock ~2 ~2 ~-10 oak_wall_sign[facing=west]{GlowingText:1b,Text1:'{"text":"auto-killer lvl 2","clickEvent":{"action":"run_command","value":"function fk:auto_killer/buy_auto_killer_pink"}}',Text2:'{"text":""}',Text3:'{"text":""}',Text4:'{"text":"lvl 3 4000$"}'}
 execute if score auto_killer spawner_pink matches 3 run setblock ~2 ~2 ~-10 oak_wall_sign[facing=west]{GlowingText:1b,Text1:'{"text":"auto-killer lvl 3","clickEvent":{"action":"run_command","value":"function fk:auto_killer/buy_auto_killer_pink"}}',Text2:'{"text":""}',Text3:'{"text":""}',Text4:'{"text":"lvl 4 8000$"}'}
 execute if score auto_killer spawner_pink matches 4 run setblock ~2 ~2 ~-10 oak_wall_sign[facing=west]{GlowingText:1b,Text1:'{"text":"auto-killer lvl 4","clickEvent":{"action":"run_command","value":"function fk:auto_killer/buy_auto_killer_pink"}}',Text2:'{"text":""}',Text3:'{"text":""}',Text4:'{"text":""}'}
+
+setblock ~0 ~7 ~-23 air
+setblock ~-6 ~7 ~-23 air
+setblock ~6 ~7 ~-23 air
+setblock ~0 ~7 ~-23 minecraft:oak_wall_sign[facing=south]{GlowingText:1b,Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function fk:up"}}',Text2:'{"text":"UP"}'}
+setblock ~-6 ~7 ~-23 minecraft:oak_wall_sign[facing=south]{GlowingText:1b,Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function fk:up"}}',Text2:'{"text":"UP"}'}
+setblock ~6 ~7 ~-23 minecraft:oak_wall_sign[facing=south]{GlowingText:1b,Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function fk:up"}}',Text2:'{"text":"UP"}'}
+
+setblock ~0 ~12 ~-22 air
+setblock ~-7 ~12 ~-22 air
+setblock ~7 ~12 ~-22 air
+setblock ~0 ~12 ~-22 minecraft:oak_wall_sign[facing=south]{GlowingText:1b,Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function fk:down"}}',Text2:'{"text":"DOWN"}'}
+setblock ~-7 ~12 ~-22 minecraft:oak_wall_sign[facing=south]{GlowingText:1b,Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function fk:down"}}',Text2:'{"text":"DOWN"}'}
+setblock ~7 ~12 ~-22 minecraft:oak_wall_sign[facing=south]{GlowingText:1b,Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function fk:down"}}',Text2:'{"text":"DOWN"}'}
+
 function fk:spawner/pink/sign_hoglin_desactivate
 data merge block ~-2 ~2 ~-12 {GlowingText:1b,Text1:'{"clickEvent":{"action":"run_command","value":"function fk:spawner/pink/buy_hoglin"},"text":"hoglin"}',Text2:'["",{"text":"lvl "},{"score":{"name":"hoglin","objective":"spawner_pink"}}]'}
 execute if score hoglin spawner_pink matches 0 run data merge block ~-2 ~2 ~-12 {Text4:'{"text":"lvl 1 40$"}'}
