@@ -32,3 +32,5 @@ scoreboard players set Seconds non_player 0
 scoreboard players set Minutes non_player 0
 
 function fk:actionbar
+
+function fk:schedule_5s
