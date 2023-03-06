@@ -17,6 +17,7 @@ execute as @a run function fk:craft/revoke_all
 schedule clear fk:hub/schedule_10t
 schedule clear fk:hub/schedule_2t
 function fk:start_team_detection
+difficulty normal
 
 execute as @a[team=red] at @e[type=marker,tag=red,limit=1] run function fk:start/start_red
 execute as @a[team=purple] at @e[type=marker,tag=purple,limit=1] run function fk:start/start_purple
