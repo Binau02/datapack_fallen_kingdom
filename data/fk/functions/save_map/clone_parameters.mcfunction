@@ -14,12 +14,12 @@ tellraw @a[tag=marker3] [{"text":"[","color":"white"},{"text":"CLONE","color":"g
 title @a[tag=marker3] title {"text":"DON'T MOVE !","color":"red","bold":true,"underlined":true}
 #################################################################################
 #set min(X,Z) of SRC area (keep in mind the offset of the DEST area)
-tp @a[tag=marker1] -1150 64 -150
+tp @a[tag=marker1] -150 64 -150
 execute at @a[tag=marker1] run summon marker ~ ~ ~ {Tags:["marker1","marker3"]}
 #end of SRC area
 
 #set min(X,Z) of DEST area
-tp @a[tag=marker2] -150 64 -150
+tp @a[tag=marker2] -1150 64 -150
 execute at @a[tag=marker2] run summon marker ~ ~ ~ {Tags:["marker2","marker3"]}
 #end of DEST area
 
