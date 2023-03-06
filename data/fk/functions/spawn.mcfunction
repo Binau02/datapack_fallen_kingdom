@@ -31,6 +31,7 @@ execute if score game_started non_player matches 0 run effect give @s resistance
 execute if score game_started non_player matches 0 run effect give @s saturation 999999 255 true
 execute if score game_started non_player matches 0 run spawnpoint @s 0 111 0
 execute if score game_started non_player matches 0 run tag @s remove player
+execute if score game_started non_player matches 0 run clear @s
 
 execute if score game_started non_player matches 1 if entity @s[team=] run team join spectator
 execute if score game_started non_player matches 1 if entity @s[tag=!player] run team join spectator

@@ -33,7 +33,9 @@ scoreboard objectives remove rocket_arrow_fall
 scoreboard objectives remove freeze_arrow
 scoreboard objectives remove temp_death
 scoreboard objectives remove displayscore
+scoreboard objectives remove can_buy
 
+scoreboard objectives add can_buy dummy
 scoreboard objectives add displayscore dummy [{"text":"[","color":"white"},{"text":"Fallen Kingdom","color":"gold"},{"text":"]","color":"white"}]
 scoreboard objectives add temp_death deathCount
 scoreboard objectives add freeze_arrow dummy
@@ -62,6 +64,14 @@ scoreboard players operation @a spawn = nb_spawn nb_spawn
 scoreboard players set clone_timer clone 0
 scoreboard players set max swap_arrowHit 1
 scoreboard players set max freeze_arrow 1
+
+####################
+# SET BLOCK PRICES #
+####################
+
+scoreboard players set T1_price non_player 10
+scoreboard players set T2_price non_player 10
+scoreboard players set T3_price non_player 10
 
 
 #############
