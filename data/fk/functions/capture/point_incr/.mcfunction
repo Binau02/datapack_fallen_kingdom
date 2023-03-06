@@ -1,13 +1,5 @@
 
 execute as @p run function fk:capture/point_incr/player_team_detection
-execute if score @s capture_score matches 0 if entity @s[team=red] run tellraw @a[team=red] [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text": "You lost a capture point !","color":"red"}]
-execute if score @s capture_score matches 0 if entity @s[team=blue] run tellraw @a[team=blue] [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text": "You lost a capture point !","color":"red"}]
-execute if score @s capture_score matches 0 if entity @s[team=yellow] run tellraw @a[team=yellow] [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text": "You lost a capture point !","color":"red"}]
-execute if score @s capture_score matches 0 if entity @s[team=black] run tellraw @a[team=black] [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text": "You lost a capture point !","color":"red"}]
-execute if score @s capture_score matches 0 if entity @s[team=white] run tellraw @a[team=white] [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text": "You lost a capture point !","color":"red"}]
-execute if score @s capture_score matches 0 if entity @s[team=pink] run tellraw @a[team=pink] [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text": "You lost a capture point !","color":"red"}]
-execute if score @s capture_score matches 0 if entity @s[team=purple] run tellraw @a[team=purple] [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text": "You lost a capture point !","color":"red"}]
-execute if score @s capture_score matches 0 if entity @s[team=green] run tellraw @a[team=green] [{"text":"[","color":"white"},{"text":"FK","color":"gold"},{"text":"] ","color":"white"},{"text": "You lost a capture point !","color":"red"}]
 
 execute if score @s capture_score matches 0 if score $team capture_score matches 1 run team join red 
 execute if score @s capture_score matches 0 if score $team capture_score matches 2 run team join blue
