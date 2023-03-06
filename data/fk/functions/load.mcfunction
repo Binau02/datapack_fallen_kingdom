@@ -70,8 +70,8 @@ scoreboard players set max freeze_arrow 1
 ####################
 
 scoreboard players set T1_price non_player 10
-scoreboard players set T2_price non_player 10
-scoreboard players set T3_price non_player 10
+scoreboard players set T2_price non_player 50
+scoreboard players set T3_price non_player 100
 
 
 #############
