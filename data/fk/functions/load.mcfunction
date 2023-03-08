@@ -71,7 +71,7 @@ scoreboard players set max freeze_arrow 1
 
 scoreboard players set T1_price non_player 10
 scoreboard players set T2_price non_player 50
-scoreboard players set T3_price non_player 100
+scoreboard players set T3_price non_player 250
 
 
 #############
@@ -101,6 +101,7 @@ gamerule mobGriefing false
 gamerule naturalRegeneration true
 gamerule playersSleepingPercentage 101
 gamerule randomTickSpeed 3
+gamerule sendCommandFeedback false
 gamerule showDeathMessages true
 gamerule spawnRadius 10
 gamerule spectatorsGenerateChunks false

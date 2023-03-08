@@ -1,24 +1,21 @@
 #red
-execute if entity @s[tag=red] at @s run gamemode adventure @a[dx=50,dz=50,dy=30,team=red] 
-execute if entity @s[tag=red] at @s run gamemode survival @a[dx=15,dz=15,dy=15,team=red] 
+execute at @e[type=marker,tag=red] positioned ~-17 ~-10 ~-17 run tag @a[dx=34,dz=50,dy=34,team=red] add inbase
 #blue
-execute if entity @s[tag=blue] at @s run gamemode adventure @a[dx=50,dz=50,dy=30,team=blue] 
-execute if entity @s[tag=blue] at @s run gamemode survival @a[dx=15,dz=15,dy=15,team=blue]
+execute at @e[type=marker,tag=blue] positioned ~-17 ~-10 ~-17 run tag @a[dx=34,dz=50,dy=34,team=blue] add inbase
 #green
-execute if entity @s[tag=green] at @s run gamemode adventure @a[dx=50,dz=50,dy=30,team=green] 
-execute if entity @s[tag=green] at @s run gamemode survival @a[dx=15,dz=15,dy=15,team=green] 
+execute at @e[type=marker,tag=green] positioned ~-17 ~-10 ~-17 run tag @a[dx=34,dz=50,dy=34,team=green] add inbase
 #yellow
-execute if entity @s[tag=yellow] at @s run gamemode adventure @a[dx=50,dz=50,dy=30,team=yellow] 
-execute if entity @s[tag=yellow] at @s run gamemode survival @a[dx=15,dz=15,dy=15,team=yellow]
+execute at @e[type=marker,tag=yellow] positioned ~-17 ~-10 ~-17 run tag @a[dx=34,dz=50,dy=34,team=yellow] add inbase
 #pink
-execute if entity @s[tag=pink] at @s run gamemode adventure @a[dx=50,dz=50,dy=30,team=pink] 
-execute if entity @s[tag=pink] at @s run gamemode survival @a[dx=15,dz=15,dy=15,team=pink]
+execute at @e[type=marker,tag=pink] positioned ~-17 ~-10 ~-17 run tag @a[dx=34,dz=50,dy=34,team=pink] add inbase
 #purple
-execute if entity @s[tag=purple] at @s run gamemode adventure @a[dx=50,dz=50,dy=30,team=purple] 
-execute if entity @s[tag=purple] at @s run gamemode survival @a[dx=15,dz=15,dy=15,team=purple]
+execute at @e[type=marker,tag=purple] positioned ~-17 ~-10 ~-17 run tag @a[dx=34,dz=50,dy=34,team=purple] add inbase
 #black
-execute if entity @s[tag=black] at @s run gamemode adventure @a[dx=50,dz=50,dy=30,team=black] 
-execute if entity @s[tag=black] at @s run gamemode survival @a[dx=15,dz=15,dy=15,team=black] 
+execute at @e[type=marker,tag=black] positioned ~-17 ~-10 ~-17 run tag @a[dx=34,dz=50,dy=34,team=black] add inbase
 #white
-execute if entity @s[tag=white] at @s run gamemode adventure @a[dx=50,dz=50,dy=30,team=white] 
-execute if entity @s[tag=white] at @s run gamemode survival @a[dx=15,dz=15,dy=15,team=white] 
+execute at @e[type=marker,tag=white] positioned ~-17 ~-10 ~-17 run tag @a[dx=34,dz=50,dy=34,team=white] add inbase
+
+gamemode survival @a[team=!spectator,tag=inbase,gamemode=adventure] 
+gamemode adventure @a[team=!spectator,tag=!inbase,gamemode=survival] 
+
+tag @a remove inbase

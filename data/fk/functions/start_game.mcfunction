@@ -18,7 +18,7 @@ schedule clear fk:hub/schedule_10t
 schedule clear fk:hub/schedule_2t
 function fk:start_team_detection
 difficulty normal
-
+function fk:bossbar/bossbar_add
 execute as @a[team=red] at @e[type=marker,tag=red,limit=1] run function fk:start/start_red
 execute as @a[team=purple] at @e[type=marker,tag=purple,limit=1] run function fk:start/start_purple
 execute as @a[team=black] at @e[type=marker,tag=black,limit=1] run function fk:start/start_black
