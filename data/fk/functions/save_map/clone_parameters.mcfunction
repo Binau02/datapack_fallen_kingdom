@@ -7,7 +7,8 @@ tag @r[tag=!marker1] add marker2
 tag @a[tag=marker1] add marker3
 tag @a[tag=marker2] add marker3
 worldborder set 100000
-
+forceload add -1150 -150 -1100 0
+forceload add -1100 0 -950 150
 gamemode spectator @a[tag=marker3]
 title @a[tag=marker3] times 0 1000000 10000000
 tellraw @a[tag=marker3] [{"text":"[","color":"white"},{"text":"CLONE","color":"green"},{"text":"] ","color":"white"},{"text":"WE NEED YOU TO REGENERATE THE MAP !\nPLEASE ","color":"red"},{"text":"DON'T MOVE AT ALL DURING ALL THE PROCESS","bold":true,"underlined":true,"color":"dark_red"},{"text":" OR IT WILL NOT WORK !!!","color":"red"}]

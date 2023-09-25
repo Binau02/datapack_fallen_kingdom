@@ -64,6 +64,7 @@ scoreboard players operation @a spawn = nb_spawn nb_spawn
 scoreboard players set clone_timer clone 0
 scoreboard players set max swap_arrowHit 1
 scoreboard players set max freeze_arrow 1
+scoreboard players set team_split non_player 1
 
 ####################
 # SET BLOCK PRICES #
